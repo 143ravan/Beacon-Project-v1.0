@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    /* The box-sizing property allows us to include the padding and border in an element's total width and height.If you set box-sizing: border-box on an element padding and border are included in the width and height */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+    /* Calculation done by converting 10px into % by 10px/16px(Default Browser config) 
+    10/16 => 0.625 i.e in 62.5% 
+    1rem = 10px */
+
+    @include respond(tab-land){ //width <=1200 ?
+         font-size: 56.25%;          //1rem = 9px; 9/16 = 56.25%
+     }
+
+    @include respond(tab-port){ //width <=900px ?
+        font-size: 50%;             //1rem = 8px; 8/16 = 50%
+    }
+
+    @include respond(phone){    //width <= 600px ?
+        font-size: 46.87%                 //1rem = 7.5px; 7.5/16 = 46.87% 
+    }
+
+    @include respond(big-desktop){ //width >= 1920px ?
+        font-size: 65.62%;               //1rem = 10.5px; 10/16 = 66.62%
+    }
+}
+
+body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    padding: 3rem;
+
+
+    @include respond(tab-port){
+        padding: 0;
+    }
+
+}
+
+::selection{
+    background-color: $color-primary;
+    color: $color-white-1;
+}

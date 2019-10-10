@@ -1,0 +1,205 @@
+.popup,
+.popup-form-login,
+.popup-form-signup,
+.popup-form-faculty,
+.popup-form-procedure,
+.popup-form-otp {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color-dark-gray-2, .98);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    @include respond(tab-land){
+        width: 100%;
+    }
+    @include respond(tab-port){
+        width: 100%;
+    }
+    @include respond(phone){
+        width: 100%;
+    }
+
+    @include respond(big-desktop){
+        width: 100%;
+    }
+    
+
+    &__content,
+    &__content-enroll {
+        @include absCenter;
+        width: 67%;
+        height: 77%;
+        border: 4px solid $color-secondary-light;
+        border-radius:5px ;
+        overflow: hidden;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.80);
+        transition: all .5s;
+
+         @include respond(tab-land) {
+          width: 90rem;
+          height: 51rem;
+         }
+
+         @include respond(tab-port) {
+            width: 90rem;
+            height: 51rem;
+         }
+
+         @include respond(phone) {
+            width: 72rem;
+            height: 41rem;
+         }
+
+         @include respond(big-desktop) {
+            width: 95rem;
+            height: 54rem;
+         }
+
+    }
+
+    &__video{
+        @include respond(tab-land) {
+            width: 100%;
+            height: 100%;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+            height: 100%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            height: 100%;
+        }
+
+        @include respond(big-desktop){
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &:target{
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    &:target &__content,
+    &:target &__content-enroll {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+        
+    }
+
+    &__close,
+    &__close-enroll {
+         &:link,
+         &:visited {
+             color: $color-white-2;
+             position: absolute;
+             top: 2.4rem;
+             right: 4rem;
+             font-size: 5rem;
+             text-decoration: none;
+             display: inline-block;
+             transition: all .4s;
+             font-weight: 800;
+             cursor: pointer;
+         }
+
+         &:hover {
+             color:$color-secondary-dark;
+         }
+    }
+
+}
+
+//Enroll Popup
+
+.popup-form-login,
+.popup-form-signup,
+.popup-form-faculty,
+.popup-form-procedure,
+.popup-form-otp{
+
+        &__content-enroll{
+            transition: all 1s;
+            background-color: $color-white-1;
+            border: 1px solid $color-dark-gray-2;
+            border-radius: 1rem;
+            transform: translate(-50%, -50%);
+
+            @include respond(tab-land){
+                width: 115rem;
+                height: 63rem;
+            }
+
+            @include respond(tab-port) {
+                width: 76rem;
+                height: 63rem;
+            }
+
+            @include respond(phone) {
+                width: 65rem;
+                height: 62rem;
+            }
+        }
+
+}
+
+.popup-form-signup{
+    &__content-enroll{
+        
+        @include respond(tab-land) {
+            width: 120rem;
+            height: 70.5rem;
+        }
+
+        @include respond(tab-port) {
+            width: 76rem;
+            height: 70.5rem;
+        }
+
+        @include respond(phone) {
+            width: 65rem;
+            height: 69.5rem;
+        }
+    }
+    
+}
+
+.popup-form-procedure{
+    &__content-enroll{
+        @include respond(tab-land){
+            width: 120rem;
+            height: 70.5rem;
+        }
+
+        @include respond(tab-port) {
+            width: 76rem;
+            height: 80.5rem;
+        }
+
+        @include respond(phone) {
+            width: 61rem;
+            height: 78.5rem;
+        }
+    }
+}
+
+.popup-form-otp{
+    height: 100vh;
+        &__content-enroll{
+            width: 50%;
+            height: 50%;
+        }
+}
+

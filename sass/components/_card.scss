@@ -1,0 +1,381 @@
+.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8 {
+    height: 40rem;
+    perspective: 170rem;
+    -webkit-perspective: 170rem;
+    -moz-perspective: 170rem;
+    position: relative;
+
+
+    &__side {
+        position: absolute;
+        border-radius: .5rem;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        backface-visibility: hidden;
+        height: 36rem;
+        transition: all .80s;
+
+
+        &--front {
+            background-color: rgba($color-white-1, 0.20);
+        }
+
+        &--back {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+            transform: rotateY(180deg);
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0deg);
+    }
+
+    &__course-picture{
+         height: 25rem;
+         background-size: cover;
+         overflow: hidden;
+         -webkit-background-blend-mode: multiply;
+         background-blend-mode: multiply;
+         -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 82%);
+         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 82%);
+
+    }
+
+    &__course-title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $color-white-2;
+        position: absolute;
+        top: 22rem;
+        right: 1.4rem;
+        text-align: right;
+        width: 73%;
+
+        &--span {
+            padding: 1.2rem 1.5rem;
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .80), rgba($color-secondary-dark, .80));
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+        }
+    }
+
+    
+
+    &__course-details {
+        padding: 1rem;
+        color: $color-dark-gray-2;
+        font-weight: 600;
+        
+
+        ul {
+            list-style: none;
+            width: 36%;
+            margin: 0 auto;
+        }
+
+        li {
+            text-align: center;
+            font-size: 1.7rem;
+            padding: .7rem;
+            text-transform: uppercase;
+
+            &:not(:last-child) {
+                border-bottom: .9px solid $color-light-gray;
+            }
+        }
+
+    }
+
+    &__course-details-alignment {
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 92%;
+    }
+
+
+
+//@include respond(tab-land) {
+    @media only screen and (max-width: 75em),
+    only screen and (hover: none) {
+
+        height: auto;
+        border-radius: 3px;
+        background-color: $color-white-1;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        width: 42rem;
+        left: 10rem;
+
+        &__side {
+            height: 28rem;
+            position: relative;
+            box-shadow: none;
+            background-image: none;
+
+            &--back {
+                transform: rotateY(0);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+            }
+        }
+
+        &:hover &__side--front {
+            transform: rotateY(0);
+        }
+
+        &__course-picture {
+            height: 25rem;
+            background-size: cover;
+            overflow: hidden;
+            -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+            position: relative;
+            width: 37rem;
+            top: 2.5rem;
+            left: 2.5rem;
+
+        }
+
+        &__course-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $color-white-2;
+            position: absolute;
+            top: 4rem;
+            width: 98%;
+            display: inline-block;
+            text-align: left;
+
+            
+        }
+
+
+        &__course-details {
+            padding: 1rem 3rem;
+        }
+
+        // FRONT SIDE STYLING
+       &__course-details-alignment {
+            position: relative;
+            top: -2rem;
+            left: -4rem;
+            transform: translate(0);
+            width: 100%;
+            padding: 4rem;
+        }
+
+    }
+
+
+    //@include respond(tab-port) {
+    @media only screen and (max-width: 56.25em),
+    only screen and (hover: none) {
+
+        height: auto;
+        border-radius: 3px;
+        background-color: $color-white-1;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        width: 42rem;
+        left: 7.3rem;
+
+        &__side {
+            height: 28rem;
+            position: relative;
+            box-shadow: none;
+            background-image: none;
+
+            &--back {
+                transform: rotateY(0);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+            }
+        }
+
+        &:hover &__side--front {
+            transform: rotateY(0);
+        }
+
+        &__course-picture {
+            height: 25rem;
+            background-size: cover;
+            overflow: hidden;
+            -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+            position: relative;
+            width: 37rem;
+            top: 2.5rem;
+            left: 2.5rem;
+
+        }
+
+        &__course-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $color-white-2;
+            position: absolute;
+            top: 4rem;
+            width: 98%;
+            display: inline-block;
+            text-align: left;
+
+
+        }
+
+
+        &__course-details {
+            padding: 1rem 3rem;
+        }
+
+        // FRONT SIDE STYLING
+        &__course-details-alignment {
+            position: relative;
+            top: -2rem;
+            left: -4rem;
+            transform: translate(0);
+            width: 100%;
+            padding: 4rem;
+        }
+
+    }
+
+
+
+        //@include respond(phone) {
+        @media only screen and (max-width: 37.5em),
+        only screen and (hover: none) {
+
+            height: auto;
+            border-radius: 3px;
+            background-color: $color-white-1;
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+            width: 33rem;
+            left: 13.4rem;
+
+            &__side {
+                height: 28rem;
+                position: relative;
+                box-shadow: none;
+                background-image: none;
+
+                &--back {
+                    transform: rotateY(0);
+                    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+                }
+            }
+
+            &:hover &__side--front {
+                transform: rotateY(0);
+            }
+
+            &__course-picture {
+                height: 25rem;
+                background-size: cover;
+                overflow: hidden;
+                -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+                clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+                position: relative;
+                width: 28rem;
+                top: 2.5rem;
+                left: 2.5rem;
+
+            }
+
+            &__course-title {
+                font-size: 2.5rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $color-white-2;
+                position: absolute;
+                top: 4rem;
+                width: 98%;
+                display: inline-block;
+                text-align: left;
+
+
+            }
+
+
+            &__course-details {
+                padding: 1rem 3rem;
+            }
+
+            // FRONT SIDE STYLING
+            &__course-details-alignment {
+                position: relative;
+                top: -2rem;
+                left: -4rem;
+                transform: translate(0);
+                width: 100%;
+                padding: 4rem;
+            }
+
+        }
+
+
+
+
+}
+
+//Electrician Img
+ .card1__course-picture {
+     border-radius: .5rem;
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990885/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-Electrician_tnsi4x.jpg"),
+         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+ }
+//Web-Dev Img
+ .card2__course-picture {
+     border-radius: .5rem;    
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990881/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-web-Dev-1_eowq8g.jpg"),
+         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+}
+//Welding Img
+ .card3__course-picture {
+     border-radius: .5rem;     
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990884/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-Welding_esu6xj.jpg"),
+         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+     
+ }
+//Sweaing Img
+ .card4__course-picture {
+     border-radius: .5rem;     
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990880/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-Sweaing_b30k7a.jpg"),
+         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+ }
+//Computer Operator Img
+ .card5__course-picture {
+     border-radius: .5rem;
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990879/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-Comp-Opt_dyiv9x.jpg"),
+         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+ }
+//AC Img
+ .card6__course-picture {
+     border-radius: .5rem;
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990876/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-AC_eiuxil.jpg"),
+         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+ }
+//Screen Printing Img
+ .card7__course-picture {
+     border-radius: .5rem;
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990877/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-Screen-Printing_plsk8u.jpg"),
+         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+ }
+//Plumbing Img
+ .card8__course-picture {
+     border-radius: .5rem;
+     background-image: url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990880/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Beacon-Plumbing_uotfcq.jpg"),
+         linear-gradient(to right, $color-secondary-light-opacity, $color-secondary-dark-opacity);
+ }
+
+
+
+

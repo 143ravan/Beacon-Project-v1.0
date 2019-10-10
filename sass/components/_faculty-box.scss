@@ -1,0 +1,121 @@
+.faculty-box {
+    background-color: rgba($color-white-1, 0.56);
+    font-size: 1.8rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: .55rem;
+    box-shadow: 0 1.7rem 4rem rgba($color-black, .40);
+    transition: all .3s;
+    margin-top: 5rem;
+    backface-visibility: hidden;
+
+    @include respond(tab-land){
+        height: 26rem;
+        padding: 2rem;
+    }
+
+    @include respond(tab-port) {
+        height: 24rem;
+        padding: 2rem;
+    }
+
+     @include respond(phone) {
+         height: 15rem;
+         padding: 2rem;
+     }
+
+
+    &__profile-pic {
+        width: 12rem;
+        transition: all .4s;
+        transform: scale(1.2);
+        margin-bottom: 1.5rem;
+        border-radius: 100%;
+        border: 4px solid $color-secondary-dark-opacity;
+
+        @include respond(tab-land){
+            width: 10.5rem;
+            margin-bottom: .5rem;
+        }
+
+         @include respond(phone) {
+             width: 10.5rem;
+             margin-bottom: .5rem;
+             float: left;
+             position: relative;
+             top: 2rem;
+             left: 2rem;
+             border: 2px solid $color-secondary-dark-opacity;
+         }
+   }
+
+   &__faculty-name{
+       position: absolute;
+       top: 28%;
+       left: 50%;
+       color: $color-light-gray;
+       font-size: 1.9rem;
+       transform: translate(-50%, -30%);
+       font-weight: 800;
+       text-transform: uppercase;
+       text-align: center;
+       opacity: 0;
+       transition: all .3s;
+
+       @include respond(phone){
+           position: absolute;
+           top: 47%;
+           left: 16%;
+           font-size: 1.7rem;
+       }
+   }
+
+    &__info {
+        font-size: 1.5rem;
+        text-align: center;
+        color: $color-dark-gray-2;
+        list-style: none;
+        font-weight: 600;
+
+        @include respond(tab-land){
+            font-size: 1.4rem;
+            text-align: center;
+        }
+
+         @include respond(tab-port) {
+             font-size: 1.3rem;
+             text-align: left;
+             font-weight: 600;
+         }
+
+         @include respond(phone) {
+             font-size: 2rem;
+             text-align: left;
+             position: relative;
+             top: 3rem;
+             left: 6rem
+         }
+    }
+
+    &:hover {
+        transform: translateY(-1.4rem) scale(1.1);
+        box-shadow: 0 1.6rem 8rem rgba($color-black, .45);
+       
+
+    }
+
+    &:hover &__faculty-name {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        backface-visibility: hidden;
+
+    }
+
+
+    &:hover &__profile-pic{
+         filter: blur(3px) brightness(50%);
+        transform: scale(1.1);
+
+    }
+
+}

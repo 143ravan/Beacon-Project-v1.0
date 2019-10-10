@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990926/Beacon%20Files/favicon%20%2B%20logo/Favicon_cpqvvd.png">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Ionicons -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- JS File -->
+  <script src="index.js"></script>
+
+  <title>BEACON BY SIES</title>
+</head>
+
+<body id="Main-Body">
+
+<!-- NAVIGATION TOGGLE -->
+
+  <div id="nav-page" class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background">&nbsp;</div>
+
+
+<!--Contents of the navigation -->
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> About </a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span> A brief about BEACON </a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span> Our faculty </a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span> Courses </a></li>
+        <li id="Login-SignUp-NavElement" class="navigation__item"><a href="#Login/SignUp" class="navigation__link"><span>05</span> Login/Sign-Up </a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Popup Video -->
+  <div class="popup" id="popup">
+    <a href="#Main-Body" class="popup__close">&times;</a>
+    <div class="popup__content">
+      <video class="popup__video" controls loop preload="auto">
+        <source
+          src="https://res.cloudinary.com/dkdmgncru/video/upload/q_auto:good/v1569991016/Beacon%20Files/Other%20Imgs%2BVideos/beacon-video-1_ig0plh.mp4"
+          type="video/mp4">
+        <source
+          src="https://res.cloudinary.com/dkdmgncru/video/upload/q_auto:good/v1569991003/Beacon%20Files/Other%20Imgs%2BVideos/beacon-video-2_nsk6ly.webm"
+          type="video/webm">
+        Your Browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+
+<!-- HEADER SECTION [1st Page:Introductory Page ] -->
+
+  <header class="header">
+  
+<!-- Google Translate -->
+    <div class="header__google-translate">
+      <div id="google-tr">
+        <div id="google_translate_element"></div>
+        <script>
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+              pageLanguage: 'cs'
+            }, 'google_translate_element');
+          }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </div>
+    </div>
+    
+
+<!-- Logo-Box -->
+    <div class="header__logo-box">
+      <img class="header__logo" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570256619/Beacon%20Files/favicon%20%2B%20logo/logo_bqw7xa.jpg" alt="Beacon-Logo">
+    </div>
+    
+<!-- Text-Box -->
+    <div class="header__text-box">
+      <h1 class="heading-type-1">
+        <span class="heading-type-1--main">Beacon</span>
+        <span class="heading-type-1--sub">Educating For Human Greatness</span>
+      </h1>
+    
+<!-- Button for Introductory video -->
+      <a href="#popup" id="Intro-video-button" class="btn btn--white btn--animated">Introductory Video</a>
+    </div>
+
+</header>
+
+<!-- Main:For accomodating other contents -->
+<main>
+  
+<!-- SECTION 1 [2nd Page : Abouts of Beacon] -->
+  <section>
+    <div class="about-section">
+
+      <div class="u-class-center u-margin-bottom-large">    <!--[u => utilities section in main.scss]-->
+        <h2 class="heading-type-2">
+          Education fills the empty mind with good things
+        </h2>
+      </div>
+
+      <div class="row">
+<!-- Information about Beacon -->
+        <div class="col-1-of-2">
+          <h3 class="heading-type-4 u-margin-bottom-small">Gaining knowledge is the first step of wisdom. Sharing it, is the first step of humanity.</h3>
+          <p class="paragraph">
+            Project Beacon Is a small step to give meaning and purpose to someone's life. As it is rightly said <strong>"It costs a candle
+            nothing to light another candle"</strong>, we pledge to be the candle of inspiration and go on to light the Beacon of Knowledge.
+          </p>
+
+          <h3 class="heading-type-4 u-margin-bottom-small">Those who have the ability to act, have the responsibility to act</h3>
+          <p class="paragraph">
+          Creating a sensitive, motivational and professional environment of vocational training for such sections of the society
+          will enable them to acquire skills which will help them get respectable jobs and also empower them to make a dignified
+          living.
+          </p>
+
+          <a href="https://res.cloudinary.com/dkdmgncru/image/upload/v1570257886/Beacon%20Files/PDF%27s/About-Beacon_i4rf35.pdf" class="btn-Read-More" target="_Blank"> Read More <ion-icon class="btn-Read-More__icon" name="arrow-dropright"></ion-icon></a>
+        </div>
+<!-- Image-Cluster at About Section -->
+        <div class="col-1-of-2">
+          <div class="image-cluster">
+            <img src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990980/Beacon%20Files/Other%20Imgs%2BVideos/Beacon-5_b9un2o.jpg" alt="photo-1" class="image-cluster__photo image-cluster__photo--p1">
+            <img src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990973/Beacon%20Files/Other%20Imgs%2BVideos/Beacon-3_gasvp2.jpg" alt="photo-3" class="image-cluster__photo image-cluster__photo--p3">
+            <img src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990971/Beacon%20Files/Other%20Imgs%2BVideos/Beacon-4_wggwrh.jpg" alt="photo-2" class="image-cluster__photo image-cluster__photo--p2">
+          
+          </div>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+<!-- SECTION-2 [3rd-Page : Faculty Information]-->
+
+  <section class="faculty-section">
+    <div class="u-class-center u-margin-bottom-small">
+      <h2 class="heading-type-3">
+        Our Wonderful Faculty
+      </h2>
+    </div>
+
+    <div class="row-2">
+<!-- FACULTY-NO : 1 -->
+      <div class="col-1-of-4">
+        <div class="faculty-box">
+          <figure>
+            <img class="faculty-box__profile-pic" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990906/Beacon%20Files/Faculty/Ramkishan_Bhise_vyt1ze.jpg" alt="Faculty Img">
+            <figcaption class="faculty-box__faculty-name">Ramkishan<br>Bhise</figcaption>
+          </figure>
+      
+          <ul class="faculty-box__info">
+            <li><u>Qualification</u> : Ph.D(English)</li>
+            <!-- <li>Experience : 10 years</li> -->
+            <li><u>Course Taught</u> : Spoken English</li>
+            <li><u>Email Id</u> : ramkishan.bhise@siesgst.ac.in</li>
+          </ul>
+        </div>
+      </div>
+<!-- FACULTY-NO : 2 -->
+      <div class="col-1-of-4">
+        <div class="faculty-box">
+          <figure>
+            <img class="faculty-box__profile-pic" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990906/Beacon%20Files/Faculty/Pranita_Mahajan_pk1jyl.jpg" alt="Pranita Mahajan">
+            <figcaption class="faculty-box__faculty-name">Pranita<br>Mahajan</figcaption>
+          </figure>
+      
+          <ul class="faculty-box__info">
+            <li><u>Qualification</u> : PhD Pursuing</li>
+            <!-- <li>Experience : 15 Years</li> -->
+            <li><u>Course Taught</u> : Web Designing</li>
+            <li><u>Email Id</u> : pranita.mahajan@siesgst.ac.in</li>
+          </ul>
+        </div>
+      </div>
+<!-- FACULTY-NO : 3 -->
+    <div class="col-1-of-4">
+      <div class="faculty-box">
+        <figure>
+          <img class="faculty-box__profile-pic" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990905/Beacon%20Files/Faculty/BADE_KRANTI_ficryn.jpg" alt="Faculty Img">
+          <figcaption class="faculty-box__faculty-name">Bade<br>kranti</figcaption>
+        </figure>
+    
+        <ul class="faculty-box__info">
+          <li><u>Qualification</u> : Me CSE</li>
+          <!-- <li>Experience : 6 Years</li> -->
+          <li><u>Course Taught</u> : Web Designing</li>
+          <li><u>Email Id</u> : &nbsp;bade.kranti@siesgst.ac.in</li>
+        </ul>
+      </div>
+    </div>
+<!-- FACULTY-NO : 4 -->
+      <div class="col-1-of-4">
+        <div class="faculty-box">
+          <figure>
+            <img class="faculty-box__profile-pic"
+              src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990906/Beacon%20Files/Faculty/Namrata_Patel_lkxwve.jpg"
+              alt="Faculty Img">
+            <figcaption class="faculty-box__faculty-name">Namrata<br>Patel</figcaption>
+          </figure>
+          <ul class="faculty-box__info">
+            <li><u>Qualification</u> : Me CSE</li>
+            <!-- <li>Experience : 7 Years</li> -->
+            <li><u>Course Taught</u> : Web Designing</li>
+            <li><u>Email Id</u> : namrata.patel@siesgst.ac.in</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+<!-- ROW-2 -->
+    <div class="row-2">
+<!-- FACULTY-NO : 5 -->
+      <div class="col-1-of-4">
+        <div class="faculty-box">
+          <figure>
+            <img class="faculty-box__profile-pic"
+              src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990906/Beacon%20Files/Faculty/BHAGYASHAL_WAGHMARE_yuidu0.jpg"
+              alt="Faculty Img">
+            <figcaption class="faculty-box__faculty-name">Bhagyashal<br>Waghmare</figcaption>
+          </figure>
+      
+          <ul class="faculty-box__info">
+            <li><u>Qualification</u> : B.com,PgD IT</li>
+            <!-- <li>Experience : 9 Years</li> -->
+            <li><u>Course Taught</u> : Computer Operator</li>
+            <li><u>Email Id</u> : bhagyashal.waghmare@siesgst.ac.in</li>
+          </ul>
+        </div>
+      </div>
+<!-- FACULTY-NO : 6 -->
+      <div class="col-1-of-4">
+        <div class="faculty-box">
+          <figure>
+            <img class="faculty-box__profile-pic" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990907/Beacon%20Files/Faculty/GAURAV_FASATE_u5nmsu.jpg" alt="Faculty Img">
+            <figcaption class="faculty-box__faculty-name">Gaurav<br>Fasate</figcaption>
+          </figure>
+
+          <ul class="faculty-box__info">
+            <li><u>Qualification</u> : BE Printing Technology</li>
+            <!-- <li>Experience : 11 Years</li> -->
+            <li><u>Course Taught</u> : Screen Printing</li>
+            <li><u>Email Id</u> : gaurav.fasate@siesgst.ac.in</li>
+          </ul>
+        </div>
+      </div>
+<!-- FACULTY-NO : 7 -->
+      <div class="col-1-of-4">
+        <div class="faculty-box">
+          <figure>
+            <img class="faculty-box__profile-pic" src="https://res.cloudinary.com/dkdmgncru/image/upload/v1569990940/Beacon%20Files/Icons/man_tuxgth.png" alt="Faculty Img">
+            <figcaption class="faculty-box__faculty-name">Vinayak<br>Chikane</figcaptiinayak Chikaneure>
+            </figure>
+
+          <ul class="faculty-box__info">
+            <li><u>Qualification</u> : ITI (FITTING)</li>
+            <!-- <li>Experience : 11 Years</li> -->
+            <li><u>Course Taught</u> : Plumbing & Welding</li>
+            <li><u>Email Id</u> : vinayak.chikane@siesgst.ac.in</li>
+          </ul>
+        </div>
+      </div>
+<!-- FACULTY-NO : 8 -->
+      <div class="col-1-of-4">
+        <div class="faculty-box">
+          <figure>
+            <img class="faculty-box__profile-pic" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569997916/Beacon%20Files/Faculty/Ali_bl3rsb.jpg" alt="Faculty Img">
+            <figcaption class="faculty-box__faculty-name">Ali Ansari</figcaption>
+          </figure>
+
+          <ul class="faculty-box__info">
+            <li><u>Qualification</u> : ME Mechanical</li>
+            <!-- <li>Experience : 9 Years</li> -->
+            <li><u>Working As</u> : Departmental Coordinator</li>
+            <li><u>Email Id</u> : mohammada.ansari@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+        
+  </div>
+</section>
+
+<!-- SECTION-3 [4th-Page : Course Details]-->
+
+  <section class="course-section">
+    <div class="u-class-center u-margin-bottom-medium">
+      <h2 class="heading-type-2">
+        Courses Offered
+      </h2>
+    </div>
+
+    <div class="row-3">
+      
+<!-- ELECTRIC WORK -->
+      <div class="col-1-of-4">
+        <div class="card1">
+          <div class="card1__side card1__side--front">
+
+            <div class="card1__course-picture">
+              &nbsp;
+            </div>
+
+            <h4 class="card1__course-title">
+              <span class="card1__course-title--span">
+                Electric Work
+              </span>
+            </h4>
+
+          </div>
+
+          <div class="card1__side card1__side--back">
+            <div class="card1__course-details-alignment">
+
+              <div class="card1__course-details">
+                <ul>
+                  <li>Detail 1</li>
+                  <li>Detail 2</li>
+                  <li>Detail 3</li>
+                  <li>Detail 4</li>
+                  <li>Detail 5</li>
+                </ul>
+              </div>
+
+            </div>
+            <a class="btn--white course-btn" href="#popup-signup">Enroll</a>
+          </div>
+        </div>
+      </div>
+
+<!-- Web-Designing -->
+     <div class="col-1-of-4">
+       <div class="card2">
+         <div class="card2__side card2__side--front">
+
+           <div class="card2__course-picture">
+             &nbsp;
+           </div>
+
+           <h4 class="card2__course-title">
+             <span class="card2__course-title--span">
+               Web Designing
+             </span>
+           </h4>
+
+         </div>
+
+         <div class="card2__side card2__side--back">
+           <div class="card2__course-details-alignment">
+
+             <div class="card2__course-details">
+               <ul>
+                 <li>Detail 1</li>
+                 <li>Detail 2</li>
+                 <li>Detail 3</li>
+                 <li>Detail 4</li>
+                 <li>Detail 5</li>
+               </ul>
+             </div>
+
+           </div>
+           <a class="btn--white course-btn" href="#popup-signup">Enroll</a>
+         </div>
+       </div>
+     </div>
+
+<!-- Welding & Metal Turing -->
+     <div class="col-1-of-4">
+       <div class="card3">
+         <div class="card3__side card3__side--front">
+
+           <div class="card3__course-picture">
+             &nbsp;
+           </div>
+
+           <h4 class="card3__course-title">
+             <span class="card3__course-title--span">
+               Welding & Metal Turing
+             </span>
+           </h4>
+
+         </div>
+
+         <div class="card3__side card3__side--back">
+           <div class="card3__course-details-alignment">
+
+             <div class="card3__course-details">
+               <ul>
+                 <li>Detail 1</li>
+                 <li>Detail 2</li>
+                 <li>Detail 3</li>
+                 <li>Detail 4</li>
+                 <li>Detail 5</li>
+               </ul>
+             </div>
+
+           </div>
+           <a class="btn--white course-btn" href="#popup-signup">Enroll</a>
+         </div>
+       </div>
+     </div>
+
+<!-- Sweing & Tailoring -->
+     <div class="col-1-of-4">
+       <div class="card4">
+         <div class="card4__side card4__side--front">
+
+           <div class="card4__course-picture">
+             &nbsp;
+           </div>
+
+           <h4 class="card4__course-title">
+             <span class="card4__course-title--span">
+               Sweing & Tailoring
+             </span>
+           </h4>
+
+         </div>
+
+         <div class="card4__side card4__side--back">
+           <div class="card4__course-details-alignment">
+
+             <div class="card4__course-details">
+               <ul>
+                 <li>Detail 1</li>
+                 <li>Detail 2</li>
+                 <li>Detail 3</li>
+                 <li>Detail 4</li>
+                 <li>Detail 5</li>
+               </ul>
+             </div>
+
+           </div>
+           <a class="btn--white course-btn" href="#popup-signup">Enroll</a>
+         </div>
+       </div>
+     </div>
+     </div>
+
+<!-- Computer Operator -->
+     <div class="row-3">
+       <div class="col-1-of-4">
+         <div class="card5">
+           <div class="card5__side card5__side--front">
+
+             <div class="card5__course-picture">
+               &nbsp;
+             </div>
+
+             <h4 class="card5__course-title">
+               <span class="card5__course-title--span">
+                 Computer Operator
+               </span>
+             </h4>
+
+           </div>
+
+           <div class="card5__side card5__side--back">
+             <div class="card5__course-details-alignment">
+              <div class="card5__course-details">
+                 <ul>
+                   <li>Detail 1</li>
+                   <li>Detail 2</li>
+                   <li>Detail 3</li>
+                   <li>Detail 4</li>
+                   <li>Detail 5</li>
+                 </ul>
+               </div>
+
+             </div>
+             <a class="btn--white course-btn" href="#popup-signup">Enroll</a>
+           </div>
+         </div>
+       </div>
+
+<!-- Basic AC Mechanic -->
+       <div class="col-1-of-4">
+         <div class="card6">
+           <div class="card6__side card6__side--front">
+
+             <div class="card6__course-picture">
+               &nbsp;
+             </div>
+
+             <h4 class="card6__course-title">
+               <span class="card6__course-title--span">
+                 Basic AC Machine
+               </span>
+             </h4>
+
+           </div>
+
+           <div class="card6__side card6__side--back">
+             <div class="card6__course-details-alignment">
+
+
+               <div class="card6__course-details">
+                 <ul>
+                   <li>Detail 1</li>
+                   <li>Detail 2</li>
+                   <li>Detail 3</li>
+                   <li>Detail 4</li>
+                   <li>Detail 5</li>
+                 </ul>
+               </div>
+
+             </div>
+             <a class="btn--white course-btn" href="#popup-signup">Enroll</a>
+           </div>
+         </div>
+       </div>
+
+<!-- Screen Printing -->
+       <div class="col-1-of-4">
+         <div class="card7">
+           <div class="card7__side card7__side--front">
+
+             <div class="card7__course-picture">
+               &nbsp;
+             </div>
+
+             <h4 class="card7__course-title">
+               <span class="card7__course-title--span">
+                 Screen Printing
+               </span>
+             </h4>
+
+           </div>
+
+           <div class="card7__side card7__side--back">
+             <div class="card7__course-details-alignment">
+
+
+               <div class="card7__course-details">
+                 <ul>
+                   <li>Detail 1</li>
+                   <li>Detail 2</li>
+                   <li>Detail 3</li>
+                   <li>Detail 4</li>
+                   <li>Detail 5</li>
+                 </ul>
+               </div>
+
+             </div>
+             <a class="btn--white course-btn" href="#popup-signup">Enroll</a>
+           </div>
+         </div>
+       </div>
+
+<!-- Plumbing -->
+       <div class="col-1-of-4">
+         <div class="card8">
+           <div class="card8__side card8__side--front">
+
+             <div class="card8__course-picture">
+               &nbsp;
+             </div>
+
+             <h4 class="card8__course-title">
+               <span class="card8__course-title--span">
+                 Plumbing Work
+               </span>
+             </h4>
+
+           </div>
+
+           <div class="card8__side card8__side--back">
+             <div class="card8__course-details-alignment">
+
+
+               <div class="card8__course-details">
+                 <ul>
+                   <li>Detail 1</li>
+                   <li>Detail 2</li>
+                   <li>Detail 3</li>
+                   <li>Detail 4</li>
+                   <li>Detail 5</li>
+                 </ul>
+               </div>
+
+             </div>
+             <a class="btn--white course-btn" href="#popup-signup">Enroll</a>
+           </div>
+         </div>
+       </div>
+
+  </div>
+</section>
+
+<!-- SECTION-4 [5th-Page : ENROLL-FORM]-->
+
+    <section id="Login/SignUp"class="enroll-section">
+      <div class="u-class-center u-margin-bottom-medium">
+        <h2 class="heading-type-3">
+          Login/Sign-In
+        </h2>
+      </div>
+
+        <div class="row-2">
+<!-- LOGIN/SIGN-IN OPTIONS -->
+            <div class="enrolling-option">
+              <div class="enrolling-option--login">
+                <a href="#popup-login" class="btn-square btn-square--white" style="padding-left:4.5rem; padding-right:4.5rem; font-weight:700; font-size: 2.4rem; border-radius: 10px;">Existing User</a>
+              </div>
+              
+              <div class="enrolling-option--sign-in">
+                <a href="#popup-signup" class="btn-square btn-square--white" style="padding-left:7rem; padding-right:7rem; font-weight:700; font-size: 2.4rem; border-radius: 10px;">New User</a>
+              </div>
+              
+              <div class="enrolling-option--faculty-login">
+                <a href="#popup-faculty" class="btn-square btn-square--white" style="font-size: 2.4rem; font-weight:700; padding-left: 4rem; padding-right: 4rem; border-radius: 10px;">Faculty-Login</a>
+              </div>
+
+              <div class="enrolling-option--procedure">
+                <a href="#popup-procedure" class="btn-square btn-square--white" style="font-size: 2.4rem; font-weight:700; padding-left:6rem; padding-right:6rem; border-radius: 10px;">Procedure</a>
+              </div>
+            </div>
+        </div>
+    </section>
+
+<!-- POPUP BOX FOR ENROLLING     -->
+    <div id="popup-login" class="popup-form-login">
+      <a href="#Login/SignUp" class="popup-form-login__close-enroll">&times;</a>
+      <div class="popup-form-login__content-enroll">
+<!-- LOGIN FORM-->
+        <div class="row">
+          <div class="col-1-of-2">
+            <img class="login-image" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570256579/Beacon%20Files/Other%20Imgs%2BVideos/Login_npshhf.jpg" alt="Img">
+          </div>
+
+          <div class="col-1-of-2">
+            <div class="forms-login">
+              <div class="u-class-center u-margin-bottom-small">
+                <h2 class="heading-type-2">
+                  Member Login
+                </h2>
+              </div>
+              <!-- Profile-Img -->
+                <img class="forms-login__profile" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570381661/Beacon%20Files/Icons/profile_hserdg.png" alt="Img">
+              <!-- NAME-->
+              <input type="text" class="forms-login__input" id="name1" placeholder="Name" required>
+              <label for="name1" class="forms-login__label-login">Name</label>
+              <!-- ROLL-NO-->
+              <input type="number" class="forms-login__input" id="Roll-No" placeholder="Roll-No" required>
+              <label for="Roll-No" class="forms-login__label-login">Roll-No</label>
+              <!-- Proceed Button-->
+                <a href="" class="btn-proceed btn-proceed--green">Proceed</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- SIGNUP FORM -->
+    <div id="popup-signup" class="popup-form-signup">
+      <a href="#Login/SignUp" class="popup-form-signup__close-enroll">&times;</a>
+      <div class="popup-form-signup__content-enroll">
+        <!-- SIGNUP FORM-->
+        <div class="row">
+          <div class="col-1-of-2">
+            <img class="signup-image" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570256652/Beacon%20Files/Other%20Imgs%2BVideos/signup_m8mjhr.png" alt="Img">
+          </div>
+    
+          <div class="col-1-of-2">
+            <div class="forms-signup">
+              <div class="u-class-center u-margin-bottom-small">
+                <h2 class="heading-type-2">
+                  Member signup
+                </h2>
+              </div>
+              <!-- Profile-Img -->
+              <img class="forms-signup__profile" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570381661/Beacon%20Files/Icons/profile_hserdg.png" alt="Img">
+              <!-- NAME-->
+              <input type="text" class="forms-signup__input" id="name2" placeholder="Name" required>
+              <label for="name2" class="forms-signup__label-signup">Name</label>
+              <!-- EMAIL-ID-->
+              <input type="email" class="forms-signup__input" id="email-id1" placeholder="Email-Id" required>
+              <label for="email-id1" class="forms-signup__label-signup">Email-Id</label>
+              <!-- CONTACT NO -->
+              <input type="number" class="forms-signup__input" id="Contact-No" placeholder="Contact-No" required>
+              <label for="Contact-No" class="forms-signup__label-signup">Contact-No</label>
+              <!-- Proceed Button-->
+              <a href="#popup-otp" style="top: 2rem; left: 5rem" class="btn-proceed btn-proceed--green">Proceed</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- OTP FORM -->
+<div id="popup-otp" class="popup-form-otp">
+  <a href="#popup-signup" class="popup-form-signup__close-enroll">&larr;</a>
+  <div class="popup-form-otp__content-enroll">
+    <div class="row">
+      <div class="col-1-of-2">
+        <img class="otp-img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570256644/Beacon%20Files/Other%20Imgs%2BVideos/otp_eubk8d.png" alt="Img">
+      </div>
+
+      <div class="col-1-of-2">
+        <div class="forms-otp">
+          <div class="u-class-center u-margin-bottom-small">
+            <h2 class="heading-type-2">
+              Enter-OTP
+            </h2>
+          </div>
+          <!-- OTP -->
+          <input type="number" class="forms-otp__input" id="otp" placeholder="Enter OTP" required>
+          <label for="otp" class="forms-otp__label-otp">Enter OTP</label>
+          <!-- Proceed Button-->
+          <a href="Beacon-Form.html" style="top: 2rem; left: 0rem;width: 79%" class="btn-proceed btn-proceed--green">Verify</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FACULTY-LOGIN -->
+    <div id="popup-faculty" class="popup-form-faculty">
+      <a href="#Login/SignUp" class="popup-form-faculty__close-enroll">&times;</a>
+      <div class="popup-form-faculty__content-enroll">
+        <!-- FACULTY FORM-->
+        <div class="row">
+          <div class="col-1-of-2">
+            <img class="faculty-login-img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570256572/Beacon%20Files/Other%20Imgs%2BVideos/Faculty-login_nfmpn7.jpg" alt="Img">
+          </div>
+    
+          <div class="col-1-of-2">
+            <div class="forms-faculty">
+              <div class="u-class-center u-margin-bottom-small">
+                <h2 class="heading-type-2">
+                  Faculty-Login
+                </h2>
+              </div>
+              <!-- Profile-Img -->
+              <img class="forms-faculty__profile" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570381661/Beacon%20Files/Icons/profile_hserdg.png" alt="Img">
+              <!-- EMAIL-ID-->
+              <input type="email" class="forms-faculty__input" id="email-id2" placeholder="Email-Id" required>
+              <label for="email-id2" class="forms-faculty__label-faculty">Email-Id</label>
+              <!-- ROLL-NO-->
+              <input type="password" class="forms-faculty__input" id="password" placeholder="Password" required>
+              <label for="password" class="forms-faculty__label-faculty">Password</label>
+              <!-- Proceed Button-->
+              <a href="" class="btn-proceed btn-proceed--green">Proceed</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- PROCEDURE -->
+<div id="popup-procedure" class="popup-form-procedure">
+  <a href="#Login/SignUp" class="popup-form-procedure__close-enroll">&times;</a>
+  <div class="popup-form-procedure__content-enroll">
+    <!-- PROCEDURE FORM-->
+    <div class="row">
+      <div class="col-1-of-2">
+        <img class="procedure-img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570256674/Beacon%20Files/Other%20Imgs%2BVideos/process_khn71b.jpg" alt="Img">
+      </div>
+
+      <div class="col-1-of-2">
+        <div class="forms-procedure">
+          <div class="u-class-center u-margin-bottom-small">
+            <h2 class="heading-type-2">
+              Procedure
+            </h2>
+          </div>
+          <div class="forms-procedure__details">
+            <p class="forms-procedure__details--para">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Eu volutpat odio facilisis mauris sit amet. Faucibus purus in massa tempor nec feugiat nisl pretium. Turpis
+              in
+              eu mi bibendum neque egestas congue. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. Nibh tortor id
+              aliquet lectus proin nibh nisl condimentum id. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque.
+              Tincidunt augue interdum velit euismod in pellentesque massa placerat duis.
+          
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Eu volutpat odio facilisis mauris sit amet. Faucibus purus in massa tempor nec feugiat nisl pretium. Turpis
+              in
+              Tincidunt augue interdum velit euismod in pellentesque massa placerat
+            </p>
+          </div>
+          <a href="#Login/SignUp" style="width:85%; left:0" class="btn-proceed btn-proceed--green">Done</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+  </main>
+
+    <!-- End of the main section -->
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570256619/Beacon%20Files/favicon%20%2B%20logo/logo_bqw7xa.jpg" class="footer__logo" alt="Logo">
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__items"><a class="footer__link" href="#">College</a></li>
+              <li class="footer__items"><a class="footer__link" href="#">Contact Us</a></li>
+              <li class="footer__items"><a class="footer__link" href="#">Carrers</a></li>
+              <li class="footer__items"><a class="footer__link" href="#">Privacy Policy</a></li>
+              <li class="footer__items"><a class="footer__link" href="#">Terms</a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built by <a href="" class="footer__link">SIESGST</a>. Copyright &copy; by SIESGST. It is strictly prohibited
+            to use this website for personal or commercial use.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Facilisis mauris sit amet massa. Elementum tempus egestas sed sed risus pretium quam vulputate.
+          </p>
+        </div>
+      </div>
+  </footer>
+
+    
+</body>
+
+</html>

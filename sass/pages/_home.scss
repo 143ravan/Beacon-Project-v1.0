@@ -1,0 +1,106 @@
+.about-section {
+    background-color: $color-dark-gray-3;
+    padding: 24rem 0;
+    margin-top: -17vh;
+    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 13%);
+
+     @include respond(tab-land) {
+         clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 13%);
+     }
+
+    @include respond(tab-port){
+        clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 10%);
+        padding: 17rem 0 22rem 0;
+    }
+
+    @include respond(phone){
+        clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 7%);
+        padding: 15rem 0 28rem 0;
+
+    }
+
+   
+}
+
+
+.faculty-section {
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom, $color-secondary-dark-opacity, $color-secondary-light-opacity),
+    url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990973/Beacon%20Files/Other%20Imgs%2BVideos/Beacon-3_gasvp2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: right;
+    clip-path: polygon(100% 1.5%, 100% 90%, 50% 100%, 0 90%, 0 1.5%, 50% 11%);
+    margin-top: -15rem;
+    text-align: center;
+
+    @include respond(tab-land){
+        padding: 20rem 0 15rem 0;
+    }
+
+    @include respond(tab-port)
+    {
+       clip-path: polygon(100% 1.5%, 100% 90%, 50% 100%, 0 90%, 0 1.5%, 50% 10.5%);
+        margin-top: -19rem;
+        padding: 22rem 0 20rem 0;
+    }
+
+    @include respond(phone) {
+       clip-path: polygon(100% 1.5%, 100% 97%, 50% 100%, 0 97%, 0 1.5%, 50% 4.5%);
+       margin-top: -22rem;
+       padding: 20rem 0 10rem 0;
+    }
+}
+        
+.course-section {
+    background-color: $color-dark-gray-3;
+    padding: 23rem 0 26rem 0;
+    margin-top: -18rem;
+    height: 87rem;
+
+    @include respond(tab-land){
+        padding: 25rem 0 35rem 0;
+        height: 245rem;
+    }
+
+     @include respond(tab-port) {
+         padding: 25rem 0 35rem 0;
+         height: 247rem;
+     }
+
+      @include respond(phone) {
+          padding: 25rem 0 30rem 0;
+          height: 250rem;
+      }
+}
+
+
+.enroll-section {
+    padding: 20rem 0;
+    height: 40vh;
+    background-image: linear-gradient(to right, $color-secondary-dark-opacity, $color-secondary-light-opacity),
+    url("https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990886/Beacon%20Files/Course%20Img%20%2B%20Background%20Img/Form-img_sw7ik2.jpg");
+    clip-path: polygon(100% 0, 100% 92%, 50% 100%, 0 92%, 0 0, 50% 15%);
+    margin-top: -15rem;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+
+    @include respond(tab-land){
+        padding: 14rem 0 30rem 0;
+    }
+
+    @include respond(tab-port){
+        padding: 14rem 0 27rem 0;
+    }
+    
+}
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- FAVICON -->
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1569990926/Beacon%20Files/favicon%20%2B%20logo/Favicon_cpqvvd.png" type="image/x-icon">
+
+<!-- GOOGLE FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:900&display=swap" rel="stylesheet">
+
+<!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- CSS -->
+    <link rel="stylesheet" href="css-form/styles-form.css">
+
+<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css-form/materialize.min.css">
+
+    <title>REGISTRATION FORM</title>
+</head>
+<body>
+    <div class="container">
+<!-- FORM HEADING -->
+    <div class="row">
+        <div style="position: relative; top:3rem;padding: 1rem" class="col s12">
+            <div class="col s4">
+                <img class="Logo" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570256762/Beacon%20Files/Other%20Imgs%2BVideos/logo_qowgnp.png" alt="Logo">
+            </div>
+
+            <div class="col s8">
+                <h4 class="initial-heading">
+                    the south indian education society's
+                </h4>
+                <h3 class="secondary-heading">
+                    graduate school of technology
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FORM FEILDS -->
+<div style="position: relative; left: 22rem; width:55%" class="container">
+    <div class="row">
+        <form style="position: relative; top: 5rem; margin-bottom: 8rem" class="col s12">
+<!-- FIRST NAME & LAST NAME -->
+            <div class="row">
+                <div class="input-field col s6">
+                    <input style="font-size:17px; font-style:inherit; text-transform: uppercase" id="first_name" type="text" class="validate" required>
+                    <label style="font-size: 1.3rem; font-weight:400" for="first_name">First Name*</label>
+                </div>
+                <div class="input-field col s6">
+                    <input style="font-size:17px; font-style:inherit; text-transform: uppercase" id="last_name" type="text" class="validate" required>
+                    <label style="font-size: 1.3rem; font-weight:400" for="last_name">Last Name*</label>
+                </div>
+            </div>
+<!-- DOB -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input style="font-size:17px; font-style:inherit; text-transform: uppercase" type="text" id="DOB" class="datepicker">
+                    <label style="font-size: 1.3rem; font-weight:400" for="DOB">Date Of Birth*</label>
+                </div>
+            </div>
+<!-- EDUCATION QUALIFICATION -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input style="font-size:17px; font-style:inherit; text-transform: uppercase" type="text" id="Edu-Qualification" class="validate" required>
+                    <input style="font-size:17px; font-style:inherit; text-transform: uppercase" type="text" id="Edu-Qualification" class="validate">
+                    <label style="font-size: 1.3rem; font-weight:400" for="Edu-Qualification">Education Qualification*</label>
+                </div>
+            </div>
+<!-- RELIGION & CASTE -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input style="font-size:17px; font-style:inherit; text-transform: uppercase" type="text" id="religion" class="validate" required>
+                    <label style="font-size: 1.3rem; font-weight:400" for="religion">Enter Your Religion & Caste*</label>
+                </div>
+            </div>
+<!-- ADDERSS -->
+            <div class="row">
+                <div class="input-field col s6">
+                    <textarea style="font-size:17px; font-style:inherit; text-transform: uppercase" id="present-address" class="materialize-textarea validate" required></textarea>
+                    <label style="font-size: 1.3rem; font-weight:400" for="present-address">Present Address*</label>
+                </div>
+                <div class="input-field col s6">
+                    <textarea style="font-size:17px; font-style:inherit; text-transform: uppercase" id="permanent-address" class="materialize-textarea validate" required></textarea>
+                    <label style="font-size: 1.3rem; font-weight:400" for="permanent-address">Permanent Address*</label>
+                </div>
+            </div>
+<!-- RESIDENCE TYPE -->
+            <div class="row">
+                <div class="input-field col s6">
+                    <select>
+                        <option value="" disabled selected>Choose Your Option</option>
+                        <option value="1">Own</option>
+                        <option value="2">Rental</option>
+                        <option value="3">Flat</option>
+                        <option value="4">Chawl</option>
+                        <option value="5">Slum</option>
+                    </select>
+                    <label style="font-size: 1rem">Residence Type*</label>
+                </div>
+<!-- Working -->
+                <div class="row">
+                    <div class="input-field col s6">
+                        <select>
+                            <option value="" disabled selected>Choose Your Option</option>
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                        </select>
+                        <label style="font-size: 1rem">Working*</label>
+                    </div>
+                </div>
+            </div>
+<!-- INCOME RANGE -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input style="font-size:17px; font-style:inherit" type="number" id="income" class="validate">
+                    <label style="font-size: 1.3rem; font-weight:400" for="income">Income Per Annum</label>
+                </div>
+            </div>
+<!-- CONTACT NUMBER -->
+            <div class="row">
+                <div class="input-field col s2">
+                    <input style="font-size:17px; font-style:inherit" type="number" id="contact-1" class="validate" required>
+                    <label style="font-size: 1.3rem; font-weight:400" for="contact-1">Contact-No (1)*</label>
+                </div>
+                <div class="input-field col s2">
+                    <input style="font-size:17px; font-style:inherit" type="number" id="contact-2" class="validate">
+                    <label style="font-size: 1.3rem; font-weight:400" for="contact-2">Contact-No (2)</label>
+                </div>
+<!-- COURSE PREFERENCE -->
+                <div style="top: -1rem" class="input-field col s8">
+                    <div class="input-field col s12">
+                        <select multiple >
+                            <option value="" disabled>Choose Your Option</option>
+                            <option value="1">Electrician</option>
+                            <option value="2">Web-Designing</option>
+                            <option value="3">Welding & Metal Turing</option>
+                            <option value="4">Sweaing & Tailoring</option>
+                            <option value="5">Computer Operator</option>
+                            <option value="6">Basic AC Mechanic</option>
+                            <option value="7">Screen Printing</option>
+                            <option value="8">Plumbing</option>
+                        </select>
+                        <label style="font-size: 1rem">Course Preference*</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+<!-- Button -->
+    <a href="Beacon-Upload.html" class="waves-effect waves-light submit-btn">Submit</a>
+</div>
+<img src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570256762/Beacon%20Files/Other%20Imgs%2BVideos/education_t8pgp7.jpg" alt="" class="form-image">
+
+
+<!-- Compiled and minified JavaScript -->
+    <script src="js-form/index.js"></script>
+    <script src="js-form/materialize.min.js"></script>
+
+
+    </body>
+</html>
