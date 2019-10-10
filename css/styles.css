@@ -1930,7 +1930,7 @@ body {
         top: 4rem; } }
     @media only screen and (max-width: 37.5em) {
       .header__google-translate {
-        top: 3.8rem;
+        top: 3.5rem;
         border-radius: 4px; } }
   .header__logo-box {
     position: absolute;

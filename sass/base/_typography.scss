@@ -40,8 +40,6 @@ body {
         animation-name: moveInRight;
         margin-bottom: 2.8rem;
 
-       
-
         @include respond(tab-port){
             letter-spacing: .8rem;
         }
