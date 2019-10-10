@@ -45,8 +45,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
          @media only screen and (max-width: 75em) {@content}; //1200px [1200/16 = 75em]
      }
 
-     @if $breakpoint == big-desktop {
-         @media only screen and (min-width: 120em) {@content}; //1920px+ [1920/16 = 120em]
-     }
+    //  @if $breakpoint == big-desktop {
+    //      @media only screen and (min-width: 120em) {@content}; //1920px+ [1920/16 = 120em]
+    //  }
     
 }

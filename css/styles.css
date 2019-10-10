@@ -76,9 +76,6 @@ html {
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 46.87%; } }
-  @media only screen and (min-width: 120em) {
-    html {
-      font-size: 65.62%; } }
 
 body {
   box-sizing: border-box;
@@ -151,7 +148,9 @@ body {
         text-shadow: none; } }
   @media only screen and (max-width: 37.5em) {
     .heading-type-2, .heading-type-3 {
-      font-size: 2.5rem; } }
+      font-size: 2.5rem; }
+      .heading-type-2:hover, .heading-type-3:hover {
+        text-shadow: none; } }
   .heading-type-2:hover, .heading-type-3:hover {
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
   .heading-type-2::selection, .heading-type-3::selection {
@@ -172,7 +171,9 @@ body {
         text-shadow: none; } }
   @media only screen and (max-width: 37.5em) {
     .heading-type-3 {
-      font-size: 2.5rem; } }
+      font-size: 2.5rem; }
+      .heading-type-3:hover {
+        text-shadow: none; } }
 
 .heading-type-4 {
   font-size: 1.75rem;
@@ -798,14 +799,6 @@ body {
     .popup-form-procedure,
     .popup-form-otp {
       width: 100%; } }
-  @media only screen and (min-width: 120em) {
-    .popup,
-    .popup-form-login,
-    .popup-form-signup,
-    .popup-form-faculty,
-    .popup-form-procedure,
-    .popup-form-otp {
-      width: 100%; } }
   .popup__content, .popup__content-enroll,
   .popup-form-login__content,
   .popup-form-login__content-enroll,
@@ -871,20 +864,6 @@ body {
       .popup-form-otp__content-enroll {
         width: 72rem;
         height: 41rem; } }
-    @media only screen and (min-width: 120em) {
-      .popup__content, .popup__content-enroll,
-      .popup-form-login__content,
-      .popup-form-login__content-enroll,
-      .popup-form-signup__content,
-      .popup-form-signup__content-enroll,
-      .popup-form-faculty__content,
-      .popup-form-faculty__content-enroll,
-      .popup-form-procedure__content,
-      .popup-form-procedure__content-enroll,
-      .popup-form-otp__content,
-      .popup-form-otp__content-enroll {
-        width: 95rem;
-        height: 54rem; } }
   @media only screen and (max-width: 75em) {
     .popup__video,
     .popup-form-login__video,
@@ -904,15 +883,6 @@ body {
       width: 100%;
       height: 100%; } }
   @media only screen and (max-width: 37.5em) {
-    .popup__video,
-    .popup-form-login__video,
-    .popup-form-signup__video,
-    .popup-form-faculty__video,
-    .popup-form-procedure__video,
-    .popup-form-otp__video {
-      width: 100%;
-      height: 100%; } }
-  @media only screen and (min-width: 120em) {
     .popup__video,
     .popup-form-login__video,
     .popup-form-signup__video,
@@ -1947,9 +1917,6 @@ body {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 96%, 50% 100%, 0 96%);
       height: 105vh; } }
-  @media only screen and (min-width: 120em) {
-    .header {
-      height: 100vh; } }
   .header__google-translate {
     position: absolute;
     left: 15rem;
