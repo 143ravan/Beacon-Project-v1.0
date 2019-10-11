@@ -58,12 +58,31 @@
             outline: 1rem solid $color-secondary-light;
         }
 
+        @include respond(tab-land){
+            &:hover{
+                transform: none;
+                box-shadow: none;
+                z-index: 0;
+                outline: none;
+            }
+        }
+
 
     }
 
      &:hover &__photo:not(:hover) {
          transform: scale(.90);
          filter: blur(3px) brightness(60%);
+
+     }
+
+     @include respond(tab-land) {
+         &:hover &__photo:not(:hover) {
+             transform: none;
+             filter: none;
+         }
      }
 
 }
+
+

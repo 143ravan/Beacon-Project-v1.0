@@ -23,6 +23,18 @@
             transform: scaleX(1.4) scaleY(1.6);
             opacity: 0;
         }
+
+        @include respond(tab-land){
+            &:hover{
+                transform: none;
+                box-shadow: none;
+                &::after{
+                    transform: none;
+                    outline: none;
+                    backface-visibility: hidden;
+                }
+            }
+        }
     }
 
     &:active {

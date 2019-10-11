@@ -140,6 +140,11 @@ body {
   transition: all .2s;
   -webkit-background-clip: text;
   color: transparent; }
+  .heading-type-2:hover, .heading-type-3:hover {
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
+  @media only screen and (max-width: 75em) {
+    .heading-type-2:hover, .heading-type-3:hover {
+      text-shadow: none; } }
   @media only screen and (max-width: 56.25em) {
     .heading-type-2, .heading-type-3 {
       font-size: 3.5rem;
@@ -151,8 +156,6 @@ body {
       font-size: 2.5rem; }
       .heading-type-2:hover, .heading-type-3:hover {
         text-shadow: none; } }
-  .heading-type-2:hover, .heading-type-3:hover {
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
   .heading-type-2::selection, .heading-type-3::selection {
     background: #333;
     color: #ffbb00; }
@@ -240,6 +243,18 @@ body {
   .btn-proceed:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
+  @media only screen and (max-width: 75em) {
+    .btn:hover:hover,
+    .btn-square:hover:hover,
+    .btn-proceed:hover:hover {
+      transform: none;
+      box-shadow: none; }
+      .btn:hover:hover::after,
+      .btn-square:hover:hover::after,
+      .btn-proceed:hover:hover::after {
+        transform: none;
+        outline: none;
+        backface-visibility: hidden; } }
 
 .btn:active,
 .btn-square:active,
@@ -662,9 +677,19 @@ body {
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 50;
       outline: 1rem solid #ffbb00; }
+    @media only screen and (max-width: 75em) {
+      .image-cluster__photo:hover {
+        transform: none;
+        box-shadow: none;
+        z-index: 0;
+        outline: none; } }
   .image-cluster:hover .image-cluster__photo:not(:hover) {
     transform: scale(0.9);
     filter: blur(3px) brightness(60%); }
+  @media only screen and (max-width: 75em) {
+    .image-cluster:hover .image-cluster__photo:not(:hover) {
+      transform: none;
+      filter: none; } }
 
 .faculty-box {
   background-color: rgba(255, 255, 255, 0.56);
