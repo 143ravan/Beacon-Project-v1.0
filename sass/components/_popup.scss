@@ -157,20 +157,23 @@
 
 .popup-form-signup{
     &__content-enroll{
+        height: 80%;
         
         @include respond(tab-land) {
             width: 120rem;
-            height: 70.5rem;
+            height: 74.5rem;
+            position: relative;
+            top: 47rem;
         }
 
         @include respond(tab-port) {
             width: 76rem;
-            height: 70.5rem;
+            height: 73.5rem;
         }
 
         @include respond(phone) {
             width: 65rem;
-            height: 69.5rem;
+            height: 71.5rem;
         }
     }
     

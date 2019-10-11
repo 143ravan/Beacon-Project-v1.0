@@ -686,19 +686,20 @@
       </div>
 
         <div class="row-2">
-<!-- LOGIN/SIGN-IN OPTIONS -->
+<!-- LOGIN/SIGN-IN/PROCEDURE OPTIONS -->
             <div class="enrolling-option">
-              <div class="enrolling-option--login">
-                <a href="#popup-login" class="btn-square btn-square--white" style="padding-left:4.5rem; padding-right:4.5rem; font-weight:700; font-size: 2.4rem; border-radius: 10px;">Existing User</a>
-              </div>
-              
               <div class="enrolling-option--sign-in">
                 <a href="#popup-signup" class="btn-square btn-square--white" style="padding-left:7rem; padding-right:7rem; font-weight:700; font-size: 2.4rem; border-radius: 10px;">New User</a>
               </div>
-              
-              <div class="enrolling-option--faculty-login">
-                <a href="#popup-faculty" class="btn-square btn-square--white" style="font-size: 2.4rem; font-weight:700; padding-left: 4rem; padding-right: 4rem; border-radius: 10px;">Faculty-Login</a>
+
+              <div class="enrolling-option--login">
+                <a href="#popup-login" class="btn-square btn-square--white"
+                  style="padding-left:4.5rem; padding-right:4.5rem; font-weight:700; font-size: 2.4rem; border-radius: 10px;">Faculty/User Login</a>
               </div>
+              
+              <!-- <div class="enrolling-option--faculty-login">
+                <a href="#popup-faculty" class="btn-square btn-square--white" style="font-size: 2.4rem; font-weight:700; padding-left: 4rem; padding-right: 4rem; border-radius: 10px;">Faculty-Login</a>
+              </div> -->
 
               <div class="enrolling-option--procedure">
                 <a href="#popup-procedure" class="btn-square btn-square--white" style="font-size: 2.4rem; font-weight:700; padding-left:6rem; padding-right:6rem; border-radius: 10px;">Procedure</a>
@@ -707,11 +708,11 @@
         </div>
     </section>
 
-<!-- POPUP BOX FOR ENROLLING     -->
+<!-- POPUP BOX FOR ENROLLING -->
     <div id="popup-login" class="popup-form-login">
       <a href="#Login/SignUp" class="popup-form-login__close-enroll">&times;</a>
       <div class="popup-form-login__content-enroll">
-<!-- LOGIN FORM-->
+<!-- LOGIN FORM [Common for Faculty and User]-->
         <div class="row">
           <div class="col-1-of-2">
             <img class="login-image" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570256579/Beacon%20Files/Other%20Imgs%2BVideos/Login_npshhf.jpg" alt="Img">
@@ -721,19 +722,20 @@
             <div class="forms-login">
               <div class="u-class-center u-margin-bottom-small">
                 <h2 class="heading-type-2">
-                  Member Login
+                  Login
                 </h2>
               </div>
               <!-- Profile-Img -->
                 <img class="forms-login__profile" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570381661/Beacon%20Files/Icons/profile_hserdg.png" alt="Img">
-              <!-- NAME-->
-              <input type="text" class="forms-login__input" id="name1" placeholder="Name" required>
-              <label for="name1" class="forms-login__label-login">Name</label>
-              <!-- ROLL-NO-->
-              <input type="number" class="forms-login__input" id="Roll-No" placeholder="Roll-No" required>
-              <label for="Roll-No" class="forms-login__label-login">Roll-No</label>
+              <!-- Email-Id-->
+              <input type="email" class="forms-login__input" id="email-id2" placeholder="Email-Id" required>
+              <label for="email-id2" class="forms-login__label-login">Email-Id</label>
+              <!-- Password-->
+              <input type="password" class="forms-login__input" id="password" placeholder="Password" required>
+              <label for="password" class="forms-login__label-login">Password</label>
               <!-- Proceed Button-->
                 <a href="" class="btn-proceed btn-proceed--green">Proceed</a>
+              
             </div>
           </div>
         </div>
@@ -768,6 +770,24 @@
               <!-- CONTACT NO -->
               <input type="number" class="forms-signup__input" id="Contact-No" placeholder="Contact-No" required>
               <label for="Contact-No" class="forms-signup__label-signup">Contact-No</label>
+              <!-- RADIO BUTTONS -->
+              <div class="forms-signup__group">
+                <div class="forms-signup__radio-group">
+                  <input type="radio" class="forms-signup__radio-input" id="Student" name="group">
+                  <label class="forms-signup__radio-label" for="Student">
+                    <span class="forms-signup__radio-button"></span>
+                    STUDENT
+                  </label>
+                </div>
+              
+                <div class="forms-signup__radio-group">
+                  <input type="radio" class="forms-signup__radio-input" id="Faculty" name="group">
+                  <label class="forms-signup__radio-label" for="Faculty">
+                    <span class="forms-signup__radio-button"></span>
+                    FACULTY
+                  </label>
+                </div>
+              </div>
               <!-- Proceed Button-->
               <a href="#popup-otp" style="top: 2rem; left: 5rem" class="btn-proceed btn-proceed--green">Proceed</a>
             </div>
@@ -803,38 +823,6 @@
   </div>
 </div>
 
-<!-- FACULTY-LOGIN -->
-    <div id="popup-faculty" class="popup-form-faculty">
-      <a href="#Login/SignUp" class="popup-form-faculty__close-enroll">&times;</a>
-      <div class="popup-form-faculty__content-enroll">
-        <!-- FACULTY FORM-->
-        <div class="row">
-          <div class="col-1-of-2">
-            <img class="faculty-login-img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570256572/Beacon%20Files/Other%20Imgs%2BVideos/Faculty-login_nfmpn7.jpg" alt="Img">
-          </div>
-    
-          <div class="col-1-of-2">
-            <div class="forms-faculty">
-              <div class="u-class-center u-margin-bottom-small">
-                <h2 class="heading-type-2">
-                  Faculty-Login
-                </h2>
-              </div>
-              <!-- Profile-Img -->
-              <img class="forms-faculty__profile" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570381661/Beacon%20Files/Icons/profile_hserdg.png" alt="Img">
-              <!-- EMAIL-ID-->
-              <input type="email" class="forms-faculty__input" id="email-id2" placeholder="Email-Id" required>
-              <label for="email-id2" class="forms-faculty__label-faculty">Email-Id</label>
-              <!-- ROLL-NO-->
-              <input type="password" class="forms-faculty__input" id="password" placeholder="Password" required>
-              <label for="password" class="forms-faculty__label-faculty">Password</label>
-              <!-- Proceed Button-->
-              <a href="" class="btn-proceed btn-proceed--green">Proceed</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 <!-- PROCEDURE -->
 <div id="popup-procedure" class="popup-form-procedure">
   <a href="#Login/SignUp" class="popup-form-procedure__close-enroll">&times;</a>
@@ -842,7 +830,9 @@
     <!-- PROCEDURE FORM-->
     <div class="row">
       <div class="col-1-of-2">
-        <img class="procedure-img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570256674/Beacon%20Files/Other%20Imgs%2BVideos/process_khn71b.jpg" alt="Img">
+        <img class="procedure-img"
+          src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570256674/Beacon%20Files/Other%20Imgs%2BVideos/process_khn71b.jpg"
+          alt="Img">
       </div>
 
       <div class="col-1-of-2">
@@ -854,15 +844,21 @@
           </div>
           <div class="forms-procedure__details">
             <p class="forms-procedure__details--para">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Eu volutpat odio facilisis mauris sit amet. Faucibus purus in massa tempor nec feugiat nisl pretium. Turpis
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna
+              aliqua. Eu volutpat odio facilisis mauris sit amet. Faucibus purus in massa tempor nec feugiat nisl
+              pretium. Turpis
               in
-              eu mi bibendum neque egestas congue. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. Nibh tortor id
-              aliquet lectus proin nibh nisl condimentum id. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque.
+              eu mi bibendum neque egestas congue. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. Nibh
+              tortor id
+              aliquet lectus proin nibh nisl condimentum id. In hac habitasse platea dictumst vestibulum rhoncus est
+              pellentesque.
               Tincidunt augue interdum velit euismod in pellentesque massa placerat duis.
-          
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Eu volutpat odio facilisis mauris sit amet. Faucibus purus in massa tempor nec feugiat nisl pretium. Turpis
+
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna
+              aliqua. Eu volutpat odio facilisis mauris sit amet. Faucibus purus in massa tempor nec feugiat nisl
+              pretium. Turpis
               in
               Tincidunt augue interdum velit euismod in pellentesque massa placerat
             </p>
@@ -873,6 +869,41 @@
     </div>
   </div>
 </div>
+
+
+<!-- FACULTY-LOGIN -->
+    <!-- <div id="popup-faculty" class="popup-form-faculty">
+      <a href="#Login/SignUp" class="popup-form-faculty__close-enroll">&times;</a>
+      <div class="popup-form-faculty__content-enroll"> -->
+        <!-- FACULTY FORM-->
+        <!-- <div class="row">
+          <div class="col-1-of-2">
+            <img class="faculty-login-img" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570256572/Beacon%20Files/Other%20Imgs%2BVideos/Faculty-login_nfmpn7.jpg" alt="Img">
+          </div>
+    
+          <div class="col-1-of-2">
+            <div class="forms-faculty">
+              <div class="u-class-center u-margin-bottom-small">
+                <h2 class="heading-type-2">
+                  Faculty-Login
+                </h2>
+              </div> -->
+              <!-- Profile-Img -->
+              <!-- <img class="forms-faculty__profile" src="https://res.cloudinary.com/dkdmgncru/image/upload/f_auto,q_auto/v1570381661/Beacon%20Files/Icons/profile_hserdg.png" alt="Img"> -->
+              <!-- EMAIL-ID-->
+              <!-- <input type="email" class="forms-faculty__input" id="email-id2" placeholder="Email-Id" required>
+              <label for="email-id2" class="forms-faculty__label-faculty">Email-Id</label> -->
+              <!-- ROLL-NO-->
+              <!-- <input type="password" class="forms-faculty__input" id="password" placeholder="Password" required>
+              <label for="password" class="forms-faculty__label-faculty">Password</label> -->
+              <!-- Proceed Button-->
+              <!-- <a href="" class="btn-proceed btn-proceed--green">Proceed</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
 
     
 

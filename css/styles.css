@@ -1179,20 +1179,22 @@ body {
       width: 65rem;
       height: 62rem; } }
 
-@media only screen and (max-width: 75em) {
-  .popup-form-signup__content-enroll {
-    width: 120rem;
-    height: 70.5rem; } }
-
-@media only screen and (max-width: 56.25em) {
-  .popup-form-signup__content-enroll {
-    width: 76rem;
-    height: 70.5rem; } }
-
-@media only screen and (max-width: 37.5em) {
-  .popup-form-signup__content-enroll {
-    width: 65rem;
-    height: 69.5rem; } }
+.popup-form-signup__content-enroll {
+  height: 80%; }
+  @media only screen and (max-width: 75em) {
+    .popup-form-signup__content-enroll {
+      width: 120rem;
+      height: 74.5rem;
+      position: relative;
+      top: 47rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .popup-form-signup__content-enroll {
+      width: 76rem;
+      height: 73.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .popup-form-signup__content-enroll {
+      width: 65rem;
+      height: 71.5rem; } }
 
 @media only screen and (max-width: 75em) {
   .popup-form-procedure__content-enroll {
@@ -1220,7 +1222,9 @@ body {
   margin: 4rem;
   height: 17rem;
   text-align: center;
-  display: -webkit-box; }
+  display: -webkit-box;
+  position: relative;
+  left: 18rem; }
   .enrolling-option--login {
     margin: 5rem; }
   .enrolling-option--sign-in {
@@ -1679,6 +1683,49 @@ body {
     margin-top: 0rem;
     position: relative;
     top: -1rem; }
+  .forms-signup__group {
+    text-align: center;
+    position: relative;
+    bottom: 1rem; }
+    @media only screen and (max-width: 75em) {
+      .forms-signup__group {
+        outline: none;
+        backface-visibility: hidden; } }
+  .forms-signup__radio-group {
+    width: 49%;
+    display: inline-block; }
+  .forms-signup__radio-label {
+    font-size: 2.1rem;
+    font-family: inherit;
+    cursor: pointer;
+    position: relative;
+    padding-left: 4rem; }
+  .forms-signup__radio-input {
+    display: none; }
+  .forms-signup__radio-button {
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    display: inline-block;
+    border: 6px solid #55c57a;
+    position: absolute;
+    left: 0;
+    top: -.4rem; }
+    .forms-signup__radio-button::after {
+      content: "";
+      display: block;
+      height: 1.6rem;
+      width: 1.6rem;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #55c57a;
+      opacity: 0;
+      transition: opacity .4s ease; }
+  .forms-signup__radio-input:checked ~ .forms-signup__radio-label .forms-signup__radio-button::after {
+    opacity: 1; }
 
 .forms-procedure {
   height: 66.5rem; }

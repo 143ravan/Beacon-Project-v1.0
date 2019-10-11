@@ -4,6 +4,8 @@
     height: 17rem;
     text-align: center;
     display: -webkit-box;
+    position: relative;
+    left: 18rem;
     &--login{
         margin: 5rem;
 
@@ -296,6 +298,66 @@
             position: relative;
             top: -1rem;
 
+        }
+
+        &__group{
+            text-align: center;
+            position: relative;
+            bottom: 1rem;
+
+            @include respond(tab-land){
+                outline: none;
+                backface-visibility: hidden;
+            }
+        }
+
+        &__radio-group {
+            width: 49%;
+            display: inline-block;
+        }
+
+        &__radio-label {
+            font-size: 2.1rem;
+            font-family: inherit;
+            cursor: pointer;
+            position: relative;
+            padding-left: 4rem;
+
+        }
+
+        &__radio-input {
+            display: none;
+        }
+
+        &__radio-button {
+            height: 2.4rem;
+            width: 2.4rem;
+            border-radius: 50%;
+            display: inline-block;
+            border: 6px solid $color-primary;
+            position: absolute;
+            left: 0;
+            top: -.4rem;
+
+
+            &::after {
+                content: "";
+                display: block;
+                height: 1.6rem;
+                width: 1.6rem;
+                border-radius: 50%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background-color: $color-primary;
+                opacity: 0;
+                transition: opacity .4s ease;
+            }
+        }
+
+        &__radio-input:checked~&__radio-label &__radio-button::after {
+            opacity: 1;
         }
 
 
