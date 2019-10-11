@@ -10,8 +10,8 @@
     backface-visibility: hidden;
 
     @include respond(tab-land){
-        height: 26rem;
-        padding: 2rem;
+        height: 30rem;
+        padding: 1.5rem;
     }
 
     @include respond(tab-port) {
@@ -36,6 +36,9 @@
         @include respond(tab-land){
             width: 10.5rem;
             margin-bottom: .5rem;
+            position: relative;
+            top: 2px;
+            border: 2px solid $color-secondary-dark-opacity;
         }
 
          @include respond(phone) {
@@ -62,6 +65,17 @@
        opacity: 0;
        transition: all .3s;
 
+       @include respond(tab-land){
+           opacity: 1;
+           transition: none;
+           transform: translate(-50%, -30%);
+           position: relative;
+           top: 2rem;
+           color:$color-dark-gray-4;
+           font-size: 1.8rem;
+           font-weight: 800;
+       }
+
        @include respond(phone){
            position: absolute;
            top: 47%;
@@ -80,6 +94,8 @@
         @include respond(tab-land){
             font-size: 1.4rem;
             text-align: center;
+            position: relative;
+            top: 7px;
         }
 
          @include respond(tab-port) {
@@ -115,8 +131,8 @@
         backface-visibility: hidden;
 
         @include respond(tab-land){
-            transform: none;
-            opacity: 0;
+            transform: translate(-50%, -31%);
+            opacity: 1;
             backface-visibility: hidden;
         }
 
@@ -131,44 +147,6 @@
             filter: none;
             transform: scale(1.2);
         }
-
-    }
-
-
-    //@include respond(tab-land) {
-    @media only screen and (max-width: 75em),
-    only screen and (hover: none) {
-
-         background-color: rgba($color-white-1, 0.56);
-         font-size: 1.8rem;
-         padding: 2.5rem;
-         text-align: center;
-         border-radius: .55rem;
-         box-shadow: 0 1.7rem 4rem rgba($color-black, .40);
-         transition: all .3s;
-         margin-top: 5rem;
-         backface-visibility: hidden;
-
-        &__faculty-name {
-            position: absolute;
-            top: 28%;
-            left: 50%;
-            color: $color-light-gray;
-            font-size: 1.9rem;
-            transform: translate(-50%, -30%);
-            font-weight: 800;
-            text-transform: uppercase;
-            text-align: center;
-            opacity: 1;
-            transition: all .3s;
-        }
-
-        &:hover &__faculty-name{
-            transform: none;
-            opacity: 0;
-            backface-visibility: hidden;
-        }
-
 
     }
 

@@ -706,8 +706,8 @@ body {
   backface-visibility: hidden; }
   @media only screen and (max-width: 75em) {
     .faculty-box {
-      height: 26rem;
-      padding: 2rem; } }
+      height: 30rem;
+      padding: 1.5rem; } }
   @media only screen and (max-width: 56.25em) {
     .faculty-box {
       height: 24rem;
@@ -726,7 +726,10 @@ body {
     @media only screen and (max-width: 75em) {
       .faculty-box__profile-pic {
         width: 10.5rem;
-        margin-bottom: .5rem; } }
+        margin-bottom: .5rem;
+        position: relative;
+        top: 2px;
+        border: 2px solid #ff7830d5; } }
     @media only screen and (max-width: 37.5em) {
       .faculty-box__profile-pic {
         width: 10.5rem;
@@ -748,6 +751,16 @@ body {
     text-align: center;
     opacity: 0;
     transition: all .3s; }
+    @media only screen and (max-width: 75em) {
+      .faculty-box__faculty-name {
+        opacity: 1;
+        transition: none;
+        transform: translate(-50%, -30%);
+        position: relative;
+        top: 2rem;
+        color: #505050;
+        font-size: 1.8rem;
+        font-weight: 800; } }
     @media only screen and (max-width: 37.5em) {
       .faculty-box__faculty-name {
         position: absolute;
@@ -763,7 +776,9 @@ body {
     @media only screen and (max-width: 75em) {
       .faculty-box__info {
         font-size: 1.4rem;
-        text-align: center; } }
+        text-align: center;
+        position: relative;
+        top: 7px; } }
     @media only screen and (max-width: 56.25em) {
       .faculty-box__info {
         font-size: 1.3rem;
@@ -789,8 +804,8 @@ body {
     backface-visibility: hidden; }
     @media only screen and (max-width: 75em) {
       .faculty-box:hover .faculty-box__faculty-name {
-        transform: none;
-        opacity: 0;
+        transform: translate(-50%, -31%);
+        opacity: 1;
         backface-visibility: hidden; } }
   .faculty-box:hover .faculty-box__profile-pic {
     filter: blur(3px) brightness(50%);
@@ -799,33 +814,6 @@ body {
       .faculty-box:hover .faculty-box__profile-pic {
         filter: none;
         transform: scale(1.2); } }
-  @media only screen and (max-width: 75em), only screen and (hover: none) {
-    .faculty-box {
-      background-color: rgba(255, 255, 255, 0.56);
-      font-size: 1.8rem;
-      padding: 2.5rem;
-      text-align: center;
-      border-radius: .55rem;
-      box-shadow: 0 1.7rem 4rem rgba(0, 0, 0, 0.4);
-      transition: all .3s;
-      margin-top: 5rem;
-      backface-visibility: hidden; }
-      .faculty-box__faculty-name {
-        position: absolute;
-        top: 28%;
-        left: 50%;
-        color: #eae9e9;
-        font-size: 1.9rem;
-        transform: translate(-50%, -30%);
-        font-weight: 800;
-        text-transform: uppercase;
-        text-align: center;
-        opacity: 1;
-        transition: all .3s; }
-      .faculty-box:hover .faculty-box__faculty-name {
-        transform: none;
-        opacity: 0;
-        backface-visibility: hidden; } }
 
 .popup,
 .popup-form-login,
@@ -2167,7 +2155,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position-x: right;
-  clip-path: polygon(100% 1.5%, 100% 90%, 50% 100%, 0 90%, 0 1.5%, 50% 9%);
+  clip-path: polygon(100% 1.5%, 100% 90%, 50% 100%, 0 90%, 0 1.5%, 50% 8%);
   margin-top: -15rem;
   text-align: center; }
   @media only screen and (max-width: 75em) {
