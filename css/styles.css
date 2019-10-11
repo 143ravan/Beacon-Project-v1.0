@@ -820,7 +820,7 @@ body {
         backface-visibility: hidden; } }
     @media only screen and (max-width: 37.5em) {
       .faculty-box:hover .faculty-box__faculty-name {
-        transform: translate(-50%, -29%);
+        transform: translate(-50%, -31%);
         opacity: 1;
         backface-visibility: hidden; } }
   .faculty-box:hover .faculty-box__profile-pic {
@@ -1920,7 +1920,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .row-2 [class^="col-"] {
         width: 83% !important;
-        margin: 0 5.8rem; } }
+        margin: 0 4rem; } }
 
 .row-3 {
   max-width: 135rem;

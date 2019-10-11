@@ -149,7 +149,7 @@
         }
 
         @include respond(phone) {
-            transform: translate(-50%, -29%);
+            transform: translate(-50%, -31%);
             opacity: 1;
             backface-visibility: hidden;
         }
