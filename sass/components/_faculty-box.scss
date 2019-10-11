@@ -46,7 +46,7 @@
              margin-bottom: .5rem;
              float: left;
              position: relative;
-             top: 2rem;
+             top: 3rem;
              left: 2rem;
              border: 2px solid $color-secondary-dark-opacity;
          }
@@ -77,10 +77,15 @@
        }
 
        @include respond(phone){
-           position: absolute;
-           top: 47%;
-           left: 16%;
+           opacity: 1;
+           transition: none;
+           transform: translate(-50%, -30%);
+           position: relative;
+           top: 1rem;
+           color:$color-dark-gray-4;
            font-size: 1.7rem;
+           font-weight: 800;
+           text-decoration: underline;;
        }
    }
 
@@ -108,8 +113,9 @@
              font-size: 2rem;
              text-align: left;
              position: relative;
-             top: 3rem;
-             left: 6rem
+             top: 0rem;
+             left: 6rem;
+             display: table;
          }
     }
 
@@ -137,6 +143,12 @@
         }
 
         @include respond(tab-port) {
+            transform: translate(-50%, -29%);
+            opacity: 1;
+            backface-visibility: hidden;
+        }
+
+        @include respond(phone) {
             transform: translate(-50%, -29%);
             opacity: 1;
             backface-visibility: hidden;

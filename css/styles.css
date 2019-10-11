@@ -736,7 +736,7 @@ body {
         margin-bottom: .5rem;
         float: left;
         position: relative;
-        top: 2rem;
+        top: 3rem;
         left: 2rem;
         border: 2px solid #ff7830d5; } }
   .faculty-box__faculty-name {
@@ -763,10 +763,15 @@ body {
         font-weight: 800; } }
     @media only screen and (max-width: 37.5em) {
       .faculty-box__faculty-name {
-        position: absolute;
-        top: 47%;
-        left: 16%;
-        font-size: 1.7rem; } }
+        opacity: 1;
+        transition: none;
+        transform: translate(-50%, -30%);
+        position: relative;
+        top: 1rem;
+        color: #505050;
+        font-size: 1.7rem;
+        font-weight: 800;
+        text-decoration: underline; } }
   .faculty-box__info {
     font-size: 1.5rem;
     text-align: center;
@@ -789,8 +794,9 @@ body {
         font-size: 2rem;
         text-align: left;
         position: relative;
-        top: 3rem;
-        left: 6rem; } }
+        top: 0rem;
+        left: 6rem;
+        display: table; } }
   .faculty-box:hover {
     transform: translateY(-1.4rem) scale(1.1);
     box-shadow: 0 1.6rem 8rem rgba(0, 0, 0, 0.45); }
@@ -808,6 +814,11 @@ body {
         opacity: 1;
         backface-visibility: hidden; } }
     @media only screen and (max-width: 56.25em) {
+      .faculty-box:hover .faculty-box__faculty-name {
+        transform: translate(-50%, -29%);
+        opacity: 1;
+        backface-visibility: hidden; } }
+    @media only screen and (max-width: 37.5em) {
       .faculty-box:hover .faculty-box__faculty-name {
         transform: translate(-50%, -29%);
         opacity: 1;
