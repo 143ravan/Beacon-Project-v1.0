@@ -100,6 +100,11 @@
     &:hover {
         transform: translateY(-1.4rem) scale(1.1);
         box-shadow: 0 1.6rem 8rem rgba($color-black, .45);
+
+        @include respond(tab-land){
+            transform: none;
+            box-shadow:0 1.7rem 4rem rgba($color-black, .40);
+        }
        
 
     }
@@ -109,13 +114,66 @@
         opacity: 1;
         backface-visibility: hidden;
 
+        @include respond(tab-land){
+            transform: none;
+            opacity: 0;
+            backface-visibility: hidden;
+        }
+
     }
 
 
     &:hover &__profile-pic{
-         filter: blur(3px) brightness(50%);
+        filter: blur(3px) brightness(50%);
         transform: scale(1.1);
+
+        @include respond(tab-land){
+            filter: none;
+            transform: scale(1.2);
+        }
 
     }
 
+
+    //@include respond(tab-land) {
+    @media only screen and (max-width: 75em),
+    only screen and (hover: none) {
+
+         background-color: rgba($color-white-1, 0.56);
+         font-size: 1.8rem;
+         padding: 2.5rem;
+         text-align: center;
+         border-radius: .55rem;
+         box-shadow: 0 1.7rem 4rem rgba($color-black, .40);
+         transition: all .3s;
+         margin-top: 5rem;
+         backface-visibility: hidden;
+
+        &__faculty-name {
+            position: absolute;
+            top: 28%;
+            left: 50%;
+            color: $color-light-gray;
+            font-size: 1.9rem;
+            transform: translate(-50%, -30%);
+            font-weight: 800;
+            text-transform: uppercase;
+            text-align: center;
+            opacity: 1;
+            transition: all .3s;
+        }
+
+        &:hover &__faculty-name{
+            transform: none;
+            opacity: 0;
+            backface-visibility: hidden;
+        }
+
+
+    }
+
+
 }
+
+
+

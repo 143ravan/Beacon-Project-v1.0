@@ -164,6 +164,9 @@ body {
   background-image: linear-gradient(to right, #e0e0e0, #eae9e9); }
   .heading-type-3:hover {
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
+  @media only screen and (max-width: 75em) {
+    .heading-type-3:hover {
+      text-shadow: none; } }
   .heading-type-3::selection {
     background: #333;
     color: #ffbb00; }
@@ -681,7 +684,7 @@ body {
       .image-cluster__photo:hover {
         transform: none;
         box-shadow: none;
-        z-index: 0;
+        z-index: 50;
         outline: none; } }
   .image-cluster:hover .image-cluster__photo:not(:hover) {
     transform: scale(0.9);
@@ -776,13 +779,53 @@ body {
   .faculty-box:hover {
     transform: translateY(-1.4rem) scale(1.1);
     box-shadow: 0 1.6rem 8rem rgba(0, 0, 0, 0.45); }
+    @media only screen and (max-width: 75em) {
+      .faculty-box:hover {
+        transform: none;
+        box-shadow: 0 1.7rem 4rem rgba(0, 0, 0, 0.4); } }
   .faculty-box:hover .faculty-box__faculty-name {
     transform: translate(-50%, -50%);
     opacity: 1;
     backface-visibility: hidden; }
+    @media only screen and (max-width: 75em) {
+      .faculty-box:hover .faculty-box__faculty-name {
+        transform: none;
+        opacity: 0;
+        backface-visibility: hidden; } }
   .faculty-box:hover .faculty-box__profile-pic {
     filter: blur(3px) brightness(50%);
     transform: scale(1.1); }
+    @media only screen and (max-width: 75em) {
+      .faculty-box:hover .faculty-box__profile-pic {
+        filter: none;
+        transform: scale(1.2); } }
+  @media only screen and (max-width: 75em), only screen and (hover: none) {
+    .faculty-box {
+      background-color: rgba(255, 255, 255, 0.56);
+      font-size: 1.8rem;
+      padding: 2.5rem;
+      text-align: center;
+      border-radius: .55rem;
+      box-shadow: 0 1.7rem 4rem rgba(0, 0, 0, 0.4);
+      transition: all .3s;
+      margin-top: 5rem;
+      backface-visibility: hidden; }
+      .faculty-box__faculty-name {
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        color: #eae9e9;
+        font-size: 1.9rem;
+        transform: translate(-50%, -30%);
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+        opacity: 1;
+        transition: all .3s; }
+      .faculty-box:hover .faculty-box__faculty-name {
+        transform: none;
+        opacity: 0;
+        backface-visibility: hidden; } }
 
 .popup,
 .popup-form-login,
@@ -2129,7 +2172,7 @@ body {
   text-align: center; }
   @media only screen and (max-width: 75em) {
     .faculty-section {
-      padding: 20rem 0 15rem 0; } }
+      padding: 20rem 0 20rem 0; } }
   @media only screen and (max-width: 56.25em) {
     .faculty-section {
       clip-path: polygon(100% 1.5%, 100% 90%, 50% 100%, 0 90%, 0 1.5%, 50% 10.5%);
