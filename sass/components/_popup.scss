@@ -203,6 +203,21 @@
         &__content-enroll{
             width: 50%;
             height: 50%;
+
+            @include respond(tab-land){
+                width: 74%;
+                height: 58%;
+            }
+
+            @include respond(tab-port){
+                width: 75%;
+                height: 58%;
+            }
+
+            @include respond(phone){
+                width: 75%;
+                height: 55%;
+            }
         }
 }
 

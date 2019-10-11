@@ -1216,6 +1216,18 @@ body {
   .popup-form-otp__content-enroll {
     width: 50%;
     height: 50%; }
+    @media only screen and (max-width: 75em) {
+      .popup-form-otp__content-enroll {
+        width: 74%;
+        height: 58%; } }
+    @media only screen and (max-width: 56.25em) {
+      .popup-form-otp__content-enroll {
+        width: 75%;
+        height: 58%; } }
+    @media only screen and (max-width: 37.5em) {
+      .popup-form-otp__content-enroll {
+        width: 75%;
+        height: 55%; } }
 
 .enrolling-option {
   padding: 3rem;
@@ -1313,6 +1325,10 @@ body {
   height: 46.8rem;
   width: 57rem;
   left: 0rem; }
+  @media only screen and (max-width: 56.25em) {
+    .otp-img {
+      height: 0rem;
+      width: 0rem; } }
 
 .forms-login,
 .forms-signup,
@@ -1776,6 +1792,22 @@ body {
     position: relative;
     left: -4rem;
     font-size: 2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .forms-otp {
+      height: 40.8rem;
+      width: 50rem;
+      text-align: center;
+      position: relative;
+      left: 9rem;
+      top: auto; } }
+  @media only screen and (max-width: 37.5em) {
+    .forms-otp {
+      height: 40.8rem;
+      width: 51rem;
+      text-align: center;
+      position: relative;
+      left: -0.5rem;
+      top: auto; } }
 
 .footer {
   background-color: #333;

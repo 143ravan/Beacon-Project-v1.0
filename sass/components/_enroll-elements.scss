@@ -108,6 +108,12 @@
     height: 46.8rem;
     width: 57rem;
     left: 0rem;
+
+    @include respond(tab-port) {
+        height: 0rem;
+        width: 0rem;
+    }
+
 }
 //=================================================
 // LOGIN
@@ -415,14 +421,14 @@
 .forms-otp{
     height: 40.8rem;
     width: 38rem;
-        &__input {
-            font-size: 2.8rem;
-            border-bottom: 2px solid transparent;
-            width: 93%;
-            height: 15%;
-            display: block;
-            left: 0rem;
-            top: 7rem;
+    &__input {
+        font-size: 2.8rem;
+        border-bottom: 2px solid transparent;
+        width: 93%;
+        height: 15%;
+        display: block;
+        left: 0rem;
+        top: 7rem;
 
     }
 
@@ -432,6 +438,24 @@
         left: -4rem;
         font-size: 2rem;
 
+    }
+
+    @include respond(tab-port){
+        height: 40.8rem;
+        width: 50rem;
+        text-align: center;
+        position: relative;
+        left: 9rem;
+        top: auto
+    }
+
+    @include respond(phone){
+        height: 40.8rem;
+        width: 51rem;
+        text-align: center;
+        position: relative;
+        left: -0.5rem;
+        top: auto;
     }
 
 }
