@@ -15,7 +15,7 @@
     }
 
     @include respond(tab-port) {
-        height: 24rem;
+        height: 30rem;
         padding: 2rem;
     }
 
@@ -132,6 +132,12 @@
 
         @include respond(tab-land){
             transform: translate(-50%, -31%);
+            opacity: 1;
+            backface-visibility: hidden;
+        }
+
+        @include respond(tab-port) {
+            transform: translate(-50%, -29%);
             opacity: 1;
             backface-visibility: hidden;
         }

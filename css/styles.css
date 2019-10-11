@@ -710,7 +710,7 @@ body {
       padding: 1.5rem; } }
   @media only screen and (max-width: 56.25em) {
     .faculty-box {
-      height: 24rem;
+      height: 30rem;
       padding: 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .faculty-box {
@@ -805,6 +805,11 @@ body {
     @media only screen and (max-width: 75em) {
       .faculty-box:hover .faculty-box__faculty-name {
         transform: translate(-50%, -31%);
+        opacity: 1;
+        backface-visibility: hidden; } }
+    @media only screen and (max-width: 56.25em) {
+      .faculty-box:hover .faculty-box__faculty-name {
+        transform: translate(-50%, -29%);
         opacity: 1;
         backface-visibility: hidden; } }
   .faculty-box:hover .faculty-box__profile-pic {
