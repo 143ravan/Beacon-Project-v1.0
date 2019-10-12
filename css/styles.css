@@ -67,22 +67,22 @@ html {
   /* Calculation done by converting 10px into % by 10px/16px(Default Browser config) 
     10/16 => 0.625 i.e in 62.5% 
     1rem = 10px */ }
-  @media only screen and (max-width: 1200px) {
-    html {
-      font-size: 56.25%; } }
-  @media only screen and (max-width: 900px) {
-    html {
-      font-size: 50%; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     html {
       font-size: 46.87%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
 
 body {
   box-sizing: border-box;
   scroll-behavior: smooth;
   overflow-x: hidden;
   padding: 3rem; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }
 
@@ -108,10 +108,10 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .heading-type-1--main {
         letter-spacing: .9rem; } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 37.5em) {
       .heading-type-1--main {
         font-size: 5rem;
         letter-spacing: 1rem;
@@ -123,10 +123,10 @@ body {
     letter-spacing: 1.7rem;
     animation: moveInRight 1s ease-out;
     margin-bottom: 2.8rem; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .heading-type-1--sub {
         letter-spacing: .8rem; } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 37.5em) {
       .heading-type-1--sub {
         letter-spacing: .5rem; } }
 
@@ -142,16 +142,16 @@ body {
   color: transparent; }
   .heading-type-2:hover, .heading-type-3:hover {
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .heading-type-2:hover, .heading-type-3:hover {
       text-shadow: none; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .heading-type-2, .heading-type-3 {
       font-size: 3.5rem;
       margin: 0 1.6rem; }
       .heading-type-2:hover, .heading-type-3:hover {
         text-shadow: none; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .heading-type-2, .heading-type-3 {
       font-size: 2.5rem; }
       .heading-type-2:hover, .heading-type-3:hover {
@@ -164,18 +164,18 @@ body {
   background-image: linear-gradient(to right, #e0e0e0, #eae9e9); }
   .heading-type-3:hover {
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .heading-type-3:hover {
       text-shadow: none; } }
   .heading-type-3::selection {
     background: #333;
     color: #ffbb00; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .heading-type-3 {
       font-size: 3.5rem; }
       .heading-type-3:hover {
         text-shadow: none; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .heading-type-3 {
       font-size: 2.5rem; }
       .heading-type-3:hover {
@@ -188,7 +188,7 @@ body {
   letter-spacing: 1px; }
   .heading-type-4::selection {
     background: #ffbb00d5; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .heading-type-4 {
       text-align: justify; } }
 
@@ -196,15 +196,15 @@ body {
   font-size: 1.7rem;
   justify-content: right;
   text-align: justify; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .paragraph {
       font-size: 1.8rem; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .paragraph {
       font-size: 1.9rem; } }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .paragraph:not(:last-child) {
         margin-bottom: 4rem; } }
   .paragraph::selection {
@@ -246,7 +246,7 @@ body {
   .btn-proceed:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .btn:hover:hover,
     .btn-square:hover:hover,
     .btn-proceed:hover:hover {
@@ -351,13 +351,13 @@ body {
   padding: .8rem .8rem;
   font-weight: 700; }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 56.25em) {
   .btn-Read-More {
     position: relative;
     left: 27rem;
     margin-bottom: 2rem; } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 37.5em) {
   .btn-Read-More {
     position: relative;
     left: 22rem;
@@ -644,7 +644,7 @@ body {
     position: absolute;
     transition: all .2s;
     outline-offset: .8rem; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .image-cluster__photo {
         float: left;
         position: relative;
@@ -653,7 +653,7 @@ body {
     .image-cluster__photo--p1 {
       left: -2rem;
       top: -2rem; }
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 56.25em) {
         .image-cluster__photo--p1 {
           top: 0;
           transform: scale(1.1);
@@ -661,7 +661,7 @@ body {
     .image-cluster__photo--p3 {
       right: -2rem;
       top: 4rem; }
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 56.25em) {
         .image-cluster__photo--p3 {
           right: 0rem;
           top: -2rem;
@@ -670,7 +670,7 @@ body {
     .image-cluster__photo--p2 {
       left: 20%;
       top: 15rem; }
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 56.25em) {
         .image-cluster__photo--p2 {
           top: 0rem;
           left: 5rem;
@@ -680,7 +680,7 @@ body {
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 50;
       outline: 1rem solid #ffbb00; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 75em) {
       .image-cluster__photo:hover {
         transform: none;
         box-shadow: none;
@@ -689,7 +689,7 @@ body {
   .image-cluster:hover .image-cluster__photo:not(:hover) {
     transform: scale(0.9);
     filter: blur(3px) brightness(60%); }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .image-cluster:hover .image-cluster__photo:not(:hover) {
       transform: none;
       filter: none; } }
@@ -704,15 +704,15 @@ body {
   transition: all .3s;
   margin-top: 5rem;
   backface-visibility: hidden; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .faculty-box {
       height: 30rem;
       padding: 1.5rem; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .faculty-box {
       height: 30rem;
       padding: 2rem; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .faculty-box {
       height: 15rem;
       padding: 2rem; } }
@@ -723,14 +723,14 @@ body {
     margin-bottom: 1.5rem;
     border-radius: 100%;
     border: 4px solid #ff7830d5; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 75em) {
       .faculty-box__profile-pic {
         width: 10.5rem;
         margin-bottom: .5rem;
         position: relative;
         top: 2px;
         border: 2px solid #ff7830d5; } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 37.5em) {
       .faculty-box__profile-pic {
         width: 10.5rem;
         margin-bottom: .5rem;
@@ -751,7 +751,7 @@ body {
     text-align: center;
     opacity: 0;
     transition: all .3s; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 75em) {
       .faculty-box__faculty-name {
         opacity: 1;
         transition: none;
@@ -761,7 +761,7 @@ body {
         color: #505050;
         font-size: 1.8rem;
         font-weight: 800; } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 37.5em) {
       .faculty-box__faculty-name {
         opacity: 1;
         transition: none;
@@ -778,18 +778,18 @@ body {
     color: #333;
     list-style: none;
     font-weight: 600; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 75em) {
       .faculty-box__info {
         font-size: 1.4rem;
         text-align: center;
         position: relative;
         top: 7px; } }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .faculty-box__info {
         font-size: 1.3rem;
         text-align: left;
         font-weight: 600; } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 37.5em) {
       .faculty-box__info {
         font-size: 2rem;
         text-align: left;
@@ -800,7 +800,7 @@ body {
   .faculty-box:hover {
     transform: translateY(-1.4rem) scale(1.1);
     box-shadow: 0 1.6rem 8rem rgba(0, 0, 0, 0.45); }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 75em) {
       .faculty-box:hover {
         transform: none;
         box-shadow: 0 1.7rem 4rem rgba(0, 0, 0, 0.4); } }
@@ -808,17 +808,17 @@ body {
     transform: translate(-50%, -50%);
     opacity: 1;
     backface-visibility: hidden; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 75em) {
       .faculty-box:hover .faculty-box__faculty-name {
         transform: translate(-50%, -31%);
         opacity: 1;
         backface-visibility: hidden; } }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .faculty-box:hover .faculty-box__faculty-name {
         transform: translate(-50%, -29%);
         opacity: 1;
         backface-visibility: hidden; } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 37.5em) {
       .faculty-box:hover .faculty-box__faculty-name {
         transform: translate(-50%, -31%);
         opacity: 1;
@@ -826,7 +826,7 @@ body {
   .faculty-box:hover .faculty-box__profile-pic {
     filter: blur(3px) brightness(50%);
     transform: scale(1.1); }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 75em) {
       .faculty-box:hover .faculty-box__profile-pic {
         filter: none;
         transform: scale(1.2); } }
@@ -847,7 +847,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .popup,
     .popup-form-login,
     .popup-form-signup,
@@ -855,7 +855,7 @@ body {
     .popup-form-procedure,
     .popup-form-otp {
       width: 100%; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .popup,
     .popup-form-login,
     .popup-form-signup,
@@ -863,7 +863,7 @@ body {
     .popup-form-procedure,
     .popup-form-otp {
       width: 100%; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .popup,
     .popup-form-login,
     .popup-form-signup,
@@ -894,7 +894,7 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.8);
     transition: all .5s; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 75em) {
       .popup__content, .popup__content-enroll,
       .popup-form-login__content,
       .popup-form-login__content-enroll,
@@ -908,7 +908,7 @@ body {
       .popup-form-otp__content-enroll {
         width: 90rem;
         height: 51rem; } }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .popup__content, .popup__content-enroll,
       .popup-form-login__content,
       .popup-form-login__content-enroll,
@@ -922,7 +922,7 @@ body {
       .popup-form-otp__content-enroll {
         width: 90rem;
         height: 51rem; } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 37.5em) {
       .popup__content, .popup__content-enroll,
       .popup-form-login__content,
       .popup-form-login__content-enroll,
@@ -936,7 +936,7 @@ body {
       .popup-form-otp__content-enroll {
         width: 72rem;
         height: 41rem; } }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .popup__video,
     .popup-form-login__video,
     .popup-form-signup__video,
@@ -945,7 +945,7 @@ body {
     .popup-form-otp__video {
       width: 100%;
       height: 100%; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .popup__video,
     .popup-form-login__video,
     .popup-form-signup__video,
@@ -954,7 +954,7 @@ body {
     .popup-form-otp__video {
       width: 100%;
       height: 100%; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .popup__video,
     .popup-form-login__video,
     .popup-form-signup__video,
@@ -1154,7 +1154,7 @@ body {
   border: 1px solid #333;
   border-radius: 1rem;
   transform: translate(-50%, -50%); }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .popup-form-login__content-enroll,
     .popup-form-signup__content-enroll,
     .popup-form-faculty__content-enroll,
@@ -1162,7 +1162,7 @@ body {
     .popup-form-otp__content-enroll {
       width: 115rem;
       height: 63rem; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .popup-form-login__content-enroll,
     .popup-form-signup__content-enroll,
     .popup-form-faculty__content-enroll,
@@ -1170,7 +1170,7 @@ body {
     .popup-form-otp__content-enroll {
       width: 76rem;
       height: 63rem; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .popup-form-login__content-enroll,
     .popup-form-signup__content-enroll,
     .popup-form-faculty__content-enroll,
@@ -1181,32 +1181,32 @@ body {
 
 .popup-form-signup__content-enroll {
   height: 80%; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .popup-form-signup__content-enroll {
       width: 120rem;
       height: 74.5rem;
       position: relative;
       top: 47rem; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .popup-form-signup__content-enroll {
       width: 76rem;
       height: 73.5rem; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .popup-form-signup__content-enroll {
       width: 65rem;
       height: 71.5rem; } }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 75em) {
   .popup-form-procedure__content-enroll {
     width: 120rem;
     height: 70.5rem; } }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 56.25em) {
   .popup-form-procedure__content-enroll {
     width: 76rem;
     height: 80.5rem; } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 37.5em) {
   .popup-form-procedure__content-enroll {
     width: 61rem;
     height: 78.5rem; } }
@@ -1216,15 +1216,15 @@ body {
   .popup-form-otp__content-enroll {
     width: 50%;
     height: 50%; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 75em) {
       .popup-form-otp__content-enroll {
         width: 74%;
         height: 58%; } }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .popup-form-otp__content-enroll {
         width: 75%;
         height: 58%; } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 37.5em) {
       .popup-form-otp__content-enroll {
         width: 75%;
         height: 55%; } }
@@ -1247,10 +1247,10 @@ body {
     margin: 5rem; }
   .enrolling-option--proceed {
     margin: 5rem; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .enrolling-option {
       display: contents; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .enrolling-option {
       display: block;
       position: relative;
@@ -1266,7 +1266,7 @@ body {
   border-radius: 5px;
   position: relative;
   left: -67px; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .login-image,
     .signup-image,
     .faculty-login-img,
@@ -1275,7 +1275,7 @@ body {
       height: 58.7rem;
       left: 0rem;
       top: 2rem; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .login-image,
     .signup-image,
     .faculty-login-img,
@@ -1288,12 +1288,12 @@ body {
   height: 55rem;
   width: 66.5rem;
   top: 8rem; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .signup-image {
       height: 52rem;
       width: 59.5rem;
       top: 9rem; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .signup-image {
       height: 0rem;
       width: 0rem; } }
@@ -1301,10 +1301,10 @@ body {
 .faculty-login-img {
   height: 54rem;
   top: 6rem; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .faculty-login-img {
       left: -5rem; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .faculty-login-img {
       height: 0rem;
       width: 0rem; } }
@@ -1312,11 +1312,11 @@ body {
 .procedure-img {
   height: 66.5rem;
   top: 3rem; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .procedure-img {
       height: 60.5rem;
       top: 5.5rem; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .procedure-img {
       height: 0rem;
       width: 0rem; } }
@@ -1325,7 +1325,7 @@ body {
   height: 46.8rem;
   width: 57rem;
   left: 0rem; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .otp-img {
       height: 0rem;
       width: 0rem; } }
@@ -1342,7 +1342,7 @@ body {
   background-color: #fff;
   border-radius: 5px;
   position: relative; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .forms-login,
     .forms-signup,
     .forms-faculty,
@@ -1350,7 +1350,7 @@ body {
     .forms-otp {
       height: 50rem;
       width: 50rem; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .forms-login,
     .forms-signup,
     .forms-faculty,
@@ -1361,7 +1361,7 @@ body {
       position: relative;
       top: -10rem;
       left: 6.5rem; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .forms-login,
     .forms-signup,
     .forms-faculty,
@@ -1381,7 +1381,7 @@ body {
     border-radius: 10rem;
     position: relative;
     left: 20rem; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 75em) {
       .forms-login__profile,
       .forms-signup__profile,
       .forms-faculty__profile,
@@ -1663,13 +1663,13 @@ body {
   width: 61rem;
   height: 66rem;
   left: 7rem; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .forms-signup {
       float: right;
       width: 61rem;
       height: 66rem;
       left: -1rem; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .forms-signup {
       float: right;
       width: 61rem;
@@ -1678,7 +1678,7 @@ body {
   .forms-signup__profile {
     left: 22rem;
     height: 16rem; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 37.5em) {
       .forms-signup__profile {
         left: 23rem; } }
   .forms-signup__input {
@@ -1703,7 +1703,7 @@ body {
     text-align: center;
     position: relative;
     bottom: 1rem; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 75em) {
       .forms-signup__group {
         outline: none;
         backface-visibility: hidden; } }
@@ -1716,7 +1716,7 @@ body {
     cursor: pointer;
     position: relative;
     padding-left: 5rem; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .forms-signup__radio-label {
         padding-left: 5rem; } }
   .forms-signup__radio-input {
@@ -1748,10 +1748,10 @@ body {
 
 .forms-procedure {
   height: 66.5rem; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .forms-procedure {
       height: 58.5rem; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .forms-procedure {
       height: 55.5rem; } }
   .forms-procedure__details {
@@ -1763,13 +1763,13 @@ body {
       -webkit-hyphens: auto;
       line-height: 30px;
       text-align: justify; }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 37.5em) {
         .forms-procedure__details--para {
           line-height: 25px; } }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .forms-procedure__details {
         height: 55.5rem; } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 37.5em) {
       .forms-procedure__details {
         height: 56.5rem;
         position: relative;
@@ -1795,7 +1795,7 @@ body {
     position: relative;
     left: -4rem;
     font-size: 2rem; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .forms-otp {
       height: 40.8rem;
       width: 50rem;
@@ -1803,7 +1803,7 @@ body {
       position: relative;
       left: 9rem;
       top: auto; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .forms-otp {
       height: 40.8rem;
       width: 51rem;
@@ -1818,7 +1818,7 @@ body {
   font-size: 1.4rem;
   clip-path: polygon(0 0, 50% 14%, 100% 0, 100% 100%, 0% 100%);
   margin-top: -10rem; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .footer {
       clip-path: polygon(0 0, 50% 12%, 100% 0, 100% 100%, 0% 100%);
       padding: 8rem 0; } }
@@ -1826,7 +1826,7 @@ body {
     text-align: center;
     margin-bottom: 8rem;
     margin-top: 8rem; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .footer__logo-box {
         margin-bottom: 6rem; } }
   .footer__logo {
@@ -1834,14 +1834,14 @@ body {
     height: auto;
     border-radius: 10rem;
     transform: rotate(1deg); }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 37.5em) {
       .footer__logo {
         width: 14.2rem; } }
   .footer__navigation {
     border-top: 1px solid #999;
     padding-top: 2rem;
     display: inline-block; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .footer__navigation {
         width: 100%;
         text-align: center; } }
@@ -1869,7 +1869,7 @@ body {
     letter-spacing: 1.3px;
     width: 77%;
     float: right; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .footer__copyright {
         width: 100%;
         float: none;
@@ -1884,18 +1884,18 @@ body {
   .row-2:not(:last-child),
   .row-3:not(:last-child) {
     margin-bottom: 8rem; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .row:not(:last-child),
       .row-2:not(:last-child),
       .row-3:not(:last-child) {
         margin-bottom: 7rem; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .row,
     .row-2,
     .row-3 {
       max-width: 70rem;
       padding: 0 3rem; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .row,
     .row-2,
     .row-3 {
@@ -1915,13 +1915,13 @@ body {
     .row-2 [class^="col-"]:not(:last-child),
     .row-3 [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child),
         .row-2 [class^="col-"]:not(:last-child),
         .row-3 [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 7rem; } }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .row [class^="col-"],
       .row-2 [class^="col-"],
       .row-3 [class^="col-"] {
@@ -1960,27 +1960,27 @@ body {
   margin-bottom: 5rem; }
   .row-2:not(:last-child) {
     margin-bottom: 8rem; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 75em) {
       .row-2:not(:last-child) {
         margin-bottom: 5rem; } }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .row-2:not(:last-child) {
         margin-bottom: 7rem; } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 37.5em) {
       .row-2:not(:last-child) {
         margin-bottom: 0; } }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .row-2 {
       max-width: 100%;
       padding: 0 3rem;
       margin-bottom: 4rem; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .row-2 {
       max-width: 100%;
       padding: 0 0rem;
       position: relative;
       left: 2.3rem; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .row-2 {
       max-width: 100%;
       padding: 0 3rem; } }
@@ -1992,14 +1992,14 @@ body {
     float: left; }
     .row-2 [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 56.25em) {
         .row-2 [class^="col-"]:not(:last-child) {
           margin-right: 3rem;
           margin-bottom: 0rem; } }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .row-2 [class^="col-"] {
         width: 22% !important; } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 37.5em) {
       .row-2 [class^="col-"] {
         width: 83% !important;
         margin: 0 4rem; } }
@@ -2009,24 +2009,24 @@ body {
   margin-bottom: 5rem; }
   .row-3:not(:last-child) {
     margin-bottom: 8rem; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 75em) {
       .row-3:not(:last-child) {
         margin-bottom: 0rem; } }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .row-3:not(:last-child) {
         margin-bottom: 0rem; } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 37.5em) {
       .row-3:not(:last-child) {
         margin-bottom: 0; } }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .row-3 {
       max-width: 100%;
       padding: 0 5rem; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .row-3 {
       max-width: 100%;
       padding: 0 3rem; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .row-3 {
       max-width: 100%;
       padding: 0 3rem; } }
@@ -2038,19 +2038,19 @@ body {
     float: left; }
     .row-3 [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 56.25em) {
         .row-3 [class^="col-"]:not(:last-child) {
           margin-right: 3rem;
           margin-bottom: 0rem; } }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 75em) {
       .row-3 [class^="col-"] {
         width: 50rem !important;
         padding: 3rem 0; } }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .row-3 [class^="col-"] {
         width: 45% !important;
         padding: 3rem 0; } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 37.5em) {
       .row-3 [class^="col-"] {
         width: 60% !important;
         margin: 0 -11rem; } }
@@ -2063,11 +2063,11 @@ body {
   clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
   background-attachment: fixed;
   position: relative; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
       height: 95vh; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 96%, 50% 100%, 0 96%);
       height: 105vh; } }
@@ -2079,10 +2079,10 @@ body {
     padding: 6px;
     border-radius: 5px;
     background-color: #eae9e9; }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       .header__google-translate {
         top: 4rem; } }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 37.5em) {
       .header__google-translate {
         top: 3.5rem;
         border-radius: 4px; } }
@@ -2120,10 +2120,10 @@ body {
   text-align: center;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.8);
   cursor: pointer; }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .navigation__button {
       top: 4rem; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .navigation__button {
       top: 5rem; } }
 
@@ -2137,10 +2137,10 @@ body {
   background-image: radial-gradient(#ffbb00, #ff7730);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .navigation__background {
       top: 4.5rem; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .navigation__background {
       top: 5.5rem; } }
 
@@ -2235,14 +2235,14 @@ body {
   padding: 24rem 0;
   margin-top: -17vh;
   clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 13%); }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .about-section {
       clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 13%); } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .about-section {
       clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 10%);
       padding: 17rem 0 22rem 0; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .about-section {
       clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0, 50% 7%);
       padding: 15rem 0 28rem 0; } }
@@ -2256,15 +2256,15 @@ body {
   clip-path: polygon(100% 1.5%, 100% 90%, 50% 100%, 0 90%, 0 1.5%, 50% 8%);
   margin-top: -15rem;
   text-align: center; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .faculty-section {
       padding: 20rem 0 20rem 0; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .faculty-section {
       clip-path: polygon(100% 1.5%, 100% 90%, 50% 100%, 0 90%, 0 1.5%, 50% 10.5%);
       margin-top: -19rem;
       padding: 22rem 0 20rem 0; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .faculty-section {
       clip-path: polygon(100% 1.5%, 100% 97%, 50% 100%, 0 97%, 0 1.5%, 50% 4.5%);
       margin-top: -22rem;
@@ -2275,15 +2275,15 @@ body {
   padding: 23rem 0 26rem 0;
   margin-top: -18rem;
   height: 87rem; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .course-section {
       padding: 25rem 0 35rem 0;
       height: 245rem; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .course-section {
       padding: 25rem 0 35rem 0;
       height: 247rem; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 37.5em) {
     .course-section {
       padding: 25rem 0 30rem 0;
       height: 250rem; } }
@@ -2303,9 +2303,9 @@ body {
     -moz-appearance: none;
     appearance: none;
     margin: 0; }
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 75em) {
     .enroll-section {
       padding: 14rem 0 30rem 0; } }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 56.25em) {
     .enroll-section {
       padding: 14rem 0 27rem 0; } }
