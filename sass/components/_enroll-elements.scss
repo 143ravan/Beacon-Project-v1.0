@@ -327,7 +327,11 @@
             font-family: inherit;
             cursor: pointer;
             position: relative;
-            padding-left: 4rem;
+            padding-left: 5rem;
+
+            @include respond(tab-port){
+                padding-left: 5rem;
+            }
 
         }
 

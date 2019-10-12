@@ -1715,7 +1715,10 @@ body {
     font-family: inherit;
     cursor: pointer;
     position: relative;
-    padding-left: 4rem; }
+    padding-left: 5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .forms-signup__radio-label {
+        padding-left: 5rem; } }
   .forms-signup__radio-input {
     display: none; }
   .forms-signup__radio-button {
