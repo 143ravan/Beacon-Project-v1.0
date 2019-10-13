@@ -706,15 +706,15 @@ body {
   backface-visibility: hidden; }
   @media only screen and (max-width: 75em) {
     .faculty-box {
-      height: 30rem;
+      min-height: 30rem;
       padding: 1.5rem; } }
   @media only screen and (max-width: 56.25em) {
     .faculty-box {
-      height: 30rem;
+      min-height: 30rem;
       padding: 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .faculty-box {
-      height: 15rem;
+      min-height: 15rem;
       padding: 2rem; } }
   .faculty-box__profile-pic {
     width: 12rem;

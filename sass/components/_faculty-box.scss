@@ -10,17 +10,17 @@
     backface-visibility: hidden;
 
     @include respond(tab-land){
-        height: 30rem;
+        min-height: 30rem;
         padding: 1.5rem;
     }
 
     @include respond(tab-port) {
-        height: 30rem;
+        min-height: 30rem;
         padding: 2rem;
     }
 
      @include respond(phone) {
-         height: 15rem;
+         min-height: 15rem;
          padding: 2rem;
      }
 
@@ -170,6 +170,3 @@
 
 
 }
-
-
-
